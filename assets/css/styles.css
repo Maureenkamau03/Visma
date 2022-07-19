@@ -1,20 +1,22 @@
 /* css for contactus page starts here */
 .hero {
 	width: 100%;
-}
-.hero-img {
-	width: 100%;
+
 	position: relative;
+	height: 20%;
+	background-color: red;
 }
 .hero-img img {
 	width: inherit;
-	size: cover;
+
+	/* size: cover; */
 }
 .hero-text {
 	position: absolute;
 	top: 45%;
 	left: 10%;
 	font-size: large;
-	color: white;
+	color: rgb(8, 7, 7);
+	background-color: yellow;
 }
 /* css for contactus page ends here */
