@@ -1,4 +1,7 @@
 /* css for contactus page starts here */
+* {
+	font-family: "Poppins", sans-serif;
+}
 .hero {
 	width: 100%;
 
@@ -24,7 +27,8 @@
 	color: rgb(255, 255, 255);
 }
 .contact-group {
-	background-color: white;
+	background-color: rgb(255, 255, 255);
+	align-items: center;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
 		rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
@@ -34,7 +38,7 @@
 	justify-content: space-between;
 	/* background-color: aqua; */
 	margin-top: 40px;
-	padding: 20px 50px;
+	padding: 20px 100px;
 	box-sizing: border-box;
 }
 .contact-group {
@@ -61,10 +65,29 @@
 	margin-bottom: 20px;
 	display: block;
 }
-input #contactus-email {
-	columns: 50;
+input {
+	padding: 10px;
 }
 i {
 	font-size: 30px;
+}
+.social-media {
+	background-color: black;
+	display: block;
+	padding: 30px;
+}
+.social-media i {
+	color: white;
+	display: block;
+	margin-left: 40px;
+	margin-top: 40px;
+}
+.social-infor-group {
+	background-color: rgb(3, 3, 3);
+	display: flex;
+	justify-content: space-around;
+
+	/* gap: 100px; */
+	color: rgb(255, 255, 255);
 }
 /* css for contactus page ends here */
