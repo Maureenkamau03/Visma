@@ -3,20 +3,25 @@
 	width: 100%;
 
 	position: relative;
-	height: 20%;
+	height: 500px;
 	background-color: red;
+	background-image: url(/assets/images/contact-banner.jpg);
+	background-size: cover;
+	background-position: rigt;
 }
 .hero-img img {
 	width: inherit;
 
+	/* height: 300px; */
 	/* size: cover; */
+	/* position: bottom left; */
 }
 .hero-text {
 	position: absolute;
-	top: 45%;
+	top: 80%;
 	left: 10%;
 	font-size: large;
-	color: rgb(8, 7, 7);
-	background-color: yellow;
+	color: rgb(255, 255, 255);
+	/* background-color: yellow; */
 }
 /* css for contactus page ends here */
