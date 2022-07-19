@@ -1,0 +1,20 @@
+/* css for contactus page starts here */
+.hero {
+	width: 100%;
+}
+.hero-img {
+	width: 100%;
+	position: relative;
+}
+.hero-img img {
+	width: inherit;
+	size: cover;
+}
+.hero-text {
+	position: absolute;
+	top: 45%;
+	left: 10%;
+	font-size: large;
+	color: white;
+}
+/* css for contactus page ends here */
