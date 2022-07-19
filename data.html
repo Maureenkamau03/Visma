@@ -5,15 +5,99 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Visma School</title>
 </head>
 
 <body>
-    <div class="performance">
-        <h1>School performance</h1>
-        1 </div>
+    <div class="dataPage">
+        <div class="performance">
+            <h1>School Performance</h1>
+        </div>
+        <div class="performanceUpdate">
+            <input type="button" value="Add Student Results >" onclick="progressUpdate()" /><br /><br />
+            <form action="" method="post" id="form">
+                <select name="class Name">
+            <option value="class">Class Pre-Unit</option>
+            <option value="class">Class PP1</option>
+            <option value="class">Class PP2</option>
+            <option value="class">Class 1</option>
+            <option value="class">Class 2</option>
+            <option value="class">Class 3</option>
+            <option value="class">Class 4</option>
+            <option value="class">Class 5</option>
+            <option value="class">Class 6</option>
+            <option value="class">Class 7</option>
+            <option value="class">Class 8</option>
+          </select>
+                <br />
+                <br /> First Name :
+                <input type="text" name="stdName" id="stdName" placeholder="first Name" />
+                <br /><br /> Last Name :
+                <input type="text" name="grade" id="grade" placeholder="Last Name" />
+                <br /><br />
+                <select name="subjects" id="subjects">
+            <option value="Math">Math</option>
+            <option value="Science">Science</option>
+            <option value="IRE">IRE</option>
+            <option value="CRE">CRE</option>
+            <option value="HRE">HRE</option>
+            <option value="Kiswahili">Kiswahili</option>
+            <option value="English">English</option>
+            <option value="Agriculture">Agriculture</option>
+            <option value="Home Science">Home Science</option>
+            <option value="Music">Music</option>
+            <option value="Hygience">Hygience</option></select
+          ><br /><br />
+          <input
+            type="number"
+            name="subjectPerformance"
+            id="subjectPerformance"
+            min="0"
+            max="100"
+          /><br /><br />
+          <input
+            type="button"
+            value="Submit"
+            id="submit"
+            onclick="alert('Submitted!!')"
+          />
+        </form>
+      </div>
+      <div id="class">
+          <div id="infoProgres">
+            <p>Update the Info Here</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum sit
+              omnis suscipit a voluptatem quo error id magni ea libero, dolorum
+              est deleniti voluptatibus distinctio quos. Animi esse eligendi sit!
+            </p>
+          </div>
+        
+      </div>
+      <h2>Class progress</h2>
+      <div class="progressStatus">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem
+        ad tempore dolore blanditiis, perspiciatis, quibusdam debitis delectus
+        vel praesentium officia maiores ratione distinctio reiciendis. Quia
+        culpa iure voluptates eveniet.
+        <img
+          src="assets/images/pie1.png"
+          alt="pie chart for the class progress"
+        />
+      </div>
+      <div class="attendance">
+       <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+        libero, numquam nemo molestiae facere exercitationem molestias porro
+        aperiam provident, nulla nobis adipisci voluptatem itaque. At accusamus
+        voluptate nihil impedit animi.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+        libero, numquam nemo molestiae facere exercitationem molestias porro
+        aperiam provident, nulla nobis adipisci voluptatem itaque. At accusamus
+        voluptate nihil impedit animi.</p>
+        <img src="assets/images/pie2.png" alt="Pie chart of school attendace" />
+      </div>
     </div>
-</body>
-
+    <script src="assets/js/app.js"></script>
+  </body>
 </html>
