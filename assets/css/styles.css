@@ -39,13 +39,32 @@
 }
 .contact-group {
 	padding: 30px;
+	align-items: center;
+	font-size: 20px;
 }
 .contact-icon-group {
 	display: flex;
 	align-items: center;
 	/* justify-content: space-between; */
-	gap: 10px;
+	gap: 20px;
 	/* padding: 20px; */
 	/* background-color: yellow; */
+}
+.email-input {
+	display: block;
+}
+.form {
+	display: block;
+}
+.inputs {
+	width: 100%;
+	margin-bottom: 20px;
+	display: block;
+}
+input #contactus-email {
+	columns: 50;
+}
+i {
+	font-size: 30px;
 }
 /* css for contactus page ends here */
