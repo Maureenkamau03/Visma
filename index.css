@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: 'Inter',sans-serif;
+    box-sizing: border-box;
+}
+.navbar {
+    background-color:whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+ }
+ .navs  {
+    display: flex;
+ }
+ .navs ul {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+ }
+ .navs ul li {
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2rem;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+ }
