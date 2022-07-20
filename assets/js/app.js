@@ -42,9 +42,9 @@ new Chart("resultsYear", {
 
 //End of Results Graph
 google.charts.load('current', { 'packages': ['corechart'] });
-google.charts.setOnLoadCallback(resultsChart);
+google.charts.setOnLoadCallback(resultChart);
 
-function resultsChart() {
+function resultChart() {
     var results = google.visualization.arrayToDataTable([
         ['Subject', 'Marks'],
         ['Maths', 80],
@@ -66,24 +66,22 @@ google.charts.load('current', { 'packages': ['corechart'] });
 google.charts.setOnLoadCallback(attendanceChart);
 
 function attendanceChart() {
-    var population = google.visualization.arrayToDataTable([
-        ['Grade', 'Population'],
-        ['PP1', 20],
-        ['PP2', 34],
-        ['GR1', 33],
-        ['GR2', 22],
-        ['GR3', 43],
-        ['GR4', 30],
-        ['GR5', 25]
-        ['GR6', 45]
-        ['GR7', 35]
-        ['GR8', 15]
+    var results = google.visualization.arrayToDataTable([
+        ['Class', 'Number'],
+        ['Grade 1', 50],
+        ['Grade 2', 40],
+        ['Grade 3', 50],
+        ['Grade 4', 42],
+        ['Grade 5', 40],
+        ['Grade 6', 50],
+        ['Grade 7', 45],
+        ['Grade 8', 45]
     ]);
-    var classData = { 'title': 'Wednesday School Attendance', 'width': 100, 'height': 200 };
+    var progressdata = { 'title': 'Results Term 1 2022', 'width': 500, 'height': 300 };
 
     var chart = new
     google.visualization.PieChart(document.getElementById('attendance'));
-    chart.draw(population, classData);
+    chart.draw(results, progressdata);
 }
 
 
