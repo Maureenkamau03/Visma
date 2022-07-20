@@ -1,3 +1,13 @@
+// Test Run
+function myFunction() {
+    var x = document.getElementById("navbar");
+    if (x.className === "navbar") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar";
+    }
+}
+
 // Data Page Below
 // Hide New Results Input Panel 1.
 function openForm() {
