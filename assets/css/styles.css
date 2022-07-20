@@ -68,9 +68,7 @@
 input {
 	padding: 10px;
 }
-i {
-	font-size: 30px;
-}
+
 .social-media {
 	background-color: black;
 	display: block;
@@ -85,9 +83,26 @@ i {
 .social-infor-group {
 	background-color: rgb(3, 3, 3);
 	display: flex;
-	justify-content: space-around;
+	align-items: center;
+	justify-content: center;
+	/* justify-content: space-around; */
 
-	/* gap: 100px; */
+	gap: 100px;
 	color: rgb(255, 255, 255);
 }
-/* css for contactus page ends here */
+.operation-infor {
+	margin-top: 40px;
+}
+.icon-main {
+	/* font-size: 70px; */
+	text-align: center;
+	color: #c201af;
+}
+
+i {
+	font-size: 30px;
+}
+.icon-main i {
+	font-size: 70px;
+}
+/* css for contactus page ends here */ ;
