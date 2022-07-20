@@ -1,13 +1,21 @@
 // Data Page Below
 // Hide New Results Input Panel 1.
-function progressUpdate() {
-    var progress = document.getElementById("form");
-    if (progress.style.display === "none") {
-        progress.style.display = "block";
-    } else {
-        progress.style.display = "none";
-    }
+function openForm() {
+    document.getElementById("form").style.display = "block";
 }
+
+function closeForm() {
+    document.getElementById("form").style.display = "none";
+}
+
+// function progressUpdate() {
+//     var progress = document.getElementById("form");
+//     if (progress.style.display === "none") {
+//         progress.style.display = "block";
+//     } else {
+//         progress.style.display = "none";
+//     }
+// }
 //end of input Panel
 //Results Graph
 var xYear = ["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"];
@@ -37,7 +45,7 @@ google.charts.load('current', { 'packages': ['corechart'] });
 google.charts.setOnLoadCallback(resultsChart);
 
 function resultsChart() {
-    var data = google.visualization.arrayToDataTable([
+    var results = google.visualization.arrayToDataTable([
         ['Subject', 'Marks'],
         ['Maths', 80],
         ['English', 70],
@@ -47,18 +55,18 @@ function resultsChart() {
         ['Agriculture', 50],
         ['Religious Education', 45]
     ]);
-    var progressdata = { 'title': 'Results Term 1 2022', 'width': 550, 'height': 300 };
+    var progressdata = { 'title': 'Results Term 1 2022', 'width': 500, 'height': 300 };
 
     var chart = new
-    google.visualization.PieChart(document.getElementById('piechart'));
-    chart.draw(data, progressdata);
+    google.visualization.PieChart(document.getElementById('pieChart'));
+    chart.draw(results, progressdata);
 }
 
 google.charts.load('current', { 'packages': ['corechart'] });
 google.charts.setOnLoadCallback(attendanceChart);
 
 function attendanceChart() {
-    var data = google.visualization.arrayToDataTable([
+    var population = google.visualization.arrayToDataTable([
         ['Grade', 'Population'],
         ['PP1', 20],
         ['PP2', 34],
@@ -71,11 +79,11 @@ function attendanceChart() {
         ['GR7', 35]
         ['GR8', 15]
     ]);
-    var progressdata = { 'title': 'Results Term 1 2022', 'width': 550, 'height': 400 };
+    var classData = { 'title': 'Wednesday School Attendance', 'width': 100, 'height': 200 };
 
     var chart = new
     google.visualization.PieChart(document.getElementById('attendance'));
-    chart.draw(data, progressdata);
+    chart.draw(population, classData);
 }
 
 

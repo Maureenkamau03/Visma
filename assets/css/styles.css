@@ -1,7 +1,7 @@
 /* Begining of Styles for Data.html */
 
 .dataPage {
-    margin: 0;
+    margin: 20px;
     padding: 15px;
     /* border: #c201ac solid 2px; */
     background-color: white;
@@ -17,7 +17,7 @@ div {
 
 .performance {
     display: block;
-    background-color: #c201ac;
+    background-color: #c201af;
     color: #000;
 }
 
@@ -25,36 +25,50 @@ div {
     text-align: center;
 }
 
-.performanceUpdate {
+#performanceUpdate {
+    margin: auto;
     display: block;
     box-sizing: border-box;
-    padding: 20px;
-    width: 50%;
-    height: 500px;
-    /* border: 2px solid #c201ac; */
+    padding: 0px;
+    box-shadow: 0 0 3px;
 }
 
 #form {
     display: block;
     justify-content: center;
+    margin: auto;
     box-sizing: border-box;
     padding: 30px;
-    height: 550px;
+    height: 650px;
     width: 100%;
     text-align: center;
+    margin: auto;
+    opacity: 2;
     /* border: 2px solid #c201ac; */
-    background-color: grey;
+    background-color: #04AA6D;
     box-shadow: 0px 0px 2px;
+}
+
+.closeForm {
+    float: right;
+}
+
+#form input {
+    padding: auto;
+    width: 30%;
 }
 
 #resultsYear {
     max-width: 50%;
+    margin: 10px;
+    /* border: #c201af solid 2px; */
 }
 
 #infoProgress p {
     /* border: #c201ac 2px solid; */
     padding: 20px;
     float: right;
+    box-shadow: 0 0 3px;
 }
 
 #infoProgress {
@@ -72,6 +86,7 @@ div {
     position: relative;
     color: #000;
     float: right;
+    box-shadow: 0 0 3px;
 }
 
 input::-webkit-outer-spin-button,
@@ -80,29 +95,34 @@ input::-webkit-inner-spin-button {
 }
 
 .progressStatus {
-    /* border: red solid 2px; */
+    /* border: #c201af solid 2px; */
     height: 600px;
-    width: 50%;
+    width: 45%;
     margin: 10px;
     float: right;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 3px;
 }
 
 #pieChart {
-    float: right;
     height: 300px;
-    width: 300px;
+    width: 50%;
+    /* background-color: #c201ac; */
 }
 
 #attendance {
-    width: 50%;
+    width: 45%;
     height: 300px;
 }
 
-.attendance {
-    border: #000 solid 2px;
+.attendanceClass {
+    /* border: #c201af solid 2px; */
+    box-sizing: border-box;
     height: 600px;
-    margin-top: 10px;
-    float: left;
+    margin: 10px;
+    box-shadow: 0 0 3px;
+    width: 50%;
 }
 
 @media only screen and (max-width:600px) {
@@ -111,7 +131,14 @@ input::-webkit-inner-spin-button {
         padding: 15px;
         /* border: #c201ac solid 2px; */
         background-color: white;
-        display: block;
+        display: flex;
+    }
+    #pieChart {
+        /* float: right; */
+        left: 50px;
+        height: 300px;
+        width: 100%;
+        background-color: #c201ac;
     }
 }
 
