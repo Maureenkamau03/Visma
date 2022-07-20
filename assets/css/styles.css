@@ -63,8 +63,32 @@ li button{
     height: 80px;
 }
 /*---Test Dropdown---*/
-.ic-app-crumbs{
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.tab{
+    color: blue;
+    text-align: start;
+    padding: 20px;
+    margin: 10px;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+.tab p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.tab-link{
+    color: rgb(8, 8, 221);
+    text-align: start;
+    padding: 10px;
+    margin: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.tab-link li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.tab-link ul li a:hover{
+    color: black;
+    background-color: aliceblue;
 }
