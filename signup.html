@@ -4,25 +4,60 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/styles.css" />
 		<title>Visma School</title>
 	</head>
 	<body>
 		<div class="container">
-			<div class="heading-signup">
-				<h1>Visma School</h1>
-				<h2>Create new account</h2>
-			</div>
-			<div class="signup-form">
-				<form action="">
-					<div class="signup-name">
-						<label for="firstname">Firstname</label>
-						<input type="text" name="firstname" id="signup-firstname" />
-					</div>
-					<div class="signup-name">
-						<label for="lastname">lastname</label>
-						<input type="text" name="lastname" id="signup-lastname" />
-					</div>
-				</form>
+			<div class="signup-form-container">
+				<div class="heading-signup">
+					<h1>Visma School</h1>
+					<h2>Create new account</h2>
+				</div>
+				<!-- signup form -->
+				<div class="signup-form">
+					<form action="">
+						<div class="signup-inputs">
+							<label for="firstname">Firstname</label>
+							<input
+								type="text"
+								name="firstname"
+								id="signup-firstname"
+								placeholder="Firstname"
+							/>
+						</div>
+						<div class="signup-inputs">
+							<label for="lastname">lastname</label>
+							<input
+								type="text"
+								name="lastname"
+								id="signup-lastname"
+								placeholder="Lastname"
+							/>
+						</div>
+						<div class="signup-inputs">
+							<label for="email">Email</label>
+							<input
+								type="email"
+								name="lastname"
+								id="signup-email"
+								placeholder="Email address"
+							/>
+						</div>
+						<div class="signup-inputs">
+							<label for="Password">Password</label>
+							<input
+								type="password"
+								name="password"
+								id="new-account-password"
+								placeholder="Password"
+							/>
+						</div>
+						<div class="signup-inputs">
+							<button type="submit" id="signup-button">Signup</button>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</body>

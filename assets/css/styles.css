@@ -69,7 +69,7 @@
 	margin-bottom: 20px;
 	display: block;
 }
-input {
+.email-input input {
 	padding: 10px;
 }
 
@@ -97,6 +97,7 @@ input {
 .operation-infor {
 	margin-top: 40px;
 }
+/* big icon on contacts div */
 .icon-main {
 	/* font-size: 70px; */
 	text-align: center;
@@ -124,5 +125,52 @@ i {
 /* css for contactus page ends here */
 
 /* css for signup page starts here */
+.signup-form-container {
+	/* background-color: red; */
+	align-items: center;
+	width: 50%;
+	margin: auto;
+	margin-top: 100px;
+	border: 2px solid #c201af;
+	border-radius: 20px;
+}
+
+.signup-form {
+	/* width: 50%; */
+	text-align: center;
+	align-items: center;
+	display: block;
+	/* background-color: aqua; */
+}
+/* .lebel {
+	display: block;
+	text-align: left;
+	margin: auto;
+} */
+/* container for label and input */
+.signup-inputs {
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	/* background-color: #c201af; */
+}
+.signup-inputs input {
+	padding: 10px;
+	width: 70%;
+}
+.heading-signup {
+	text-align: center;
+}
+.signup-inputs button {
+	width: 50%;
+	padding: 10px 10px;
+	display: flex;
+	justify-content: center;
+	margin: 15px auto;
+	font-size: 20px;
+	background-color: #c201af;
+	border: none;
+	border-radius: 10px;
+}
 
 /* css for signup page ends here */
