@@ -1,4 +1,5 @@
 /*----Test start----*/
+/*----NavigationBar----*/
 *{
     margin: 0;
     padding: 0;
@@ -60,4 +61,10 @@ li button{
 .img{
     width: 150px;
     height: 80px;
+}
+/*---Test Dropdown---*/
+.ic-app-crumbs{
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
