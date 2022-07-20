@@ -149,7 +149,8 @@ i {
 } */
 /* container for label and input */
 .signup-inputs {
-	display: block;
+	display: flex;
+	justify-content: space-around;
 	width: 100%;
 	margin-bottom: 20px;
 	/* background-color: #c201af; */
