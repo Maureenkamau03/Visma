@@ -71,6 +71,8 @@ li button{
     font-family: sans-serif;
     font-size: 24px;
     font-weight: 700;
+    border-style: double;
+    background-color: aliceblue;
 }
 .tab p{
     padding-top: 10px;
@@ -91,4 +93,7 @@ li button{
 .tab-link ul li a:hover{
     color: black;
     background-color: aliceblue;
+}
+.btn{
+    
 }
