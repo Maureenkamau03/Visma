@@ -3,10 +3,13 @@
 .dataPage {
     margin: 0;
     padding: 15px;
+    /* border: #c201ac solid 2px; */
+    background-color: white;
+    display: block;
 }
 
 div {
-    /* border: green solid 5px; */
+    /* border: solid #c201ac 2px; */
     box-sizing: border-box;
     margin: 2px;
     padding: 10px;
@@ -26,23 +29,38 @@ div {
     display: block;
     box-sizing: border-box;
     padding: 20px;
-    width: 35%;
-    /* border: 2px solid blue; */
+    width: 50%;
+    /* border: 2px solid #c201ac; */
 }
 
 #form {
+    display: block;
+    justify-content: center;
     box-sizing: border-box;
     padding: 20px;
     height: 300px;
     width: 100%;
+    text-align: center;
     /* border: 2px solid #c201ac; */
-    display: block;
-    justify-content: center;
+    background-color: whitesmoke;
+}
+
+#resultsYear {
+    width: 100%;
+    max-width: 600px;
+}
+
+#infoProgress p {
+    /* border: #c201ac 2px solid; */
+    padding: 20px;
+    float: right;
 }
 
 #infoProgress {
+    display: flex;
     width: 100%;
-    height: 400px;
+    height: 500px;
+    /* border: #c201ac solid 2px; */
 }
 
 #class {
@@ -52,7 +70,7 @@ div {
     box-sizing: border-box;
     position: relative;
     color: #000;
-    /* float: right; */
+    float: right;
 }
 
 input::-webkit-outer-spin-button,
@@ -62,17 +80,39 @@ input::-webkit-inner-spin-button {
 
 .progressStatus {
     /* border: red solid 2px; */
-    height: 400px;
-    width: 100%;
-    margin-top: 10px;
+    height: 600px;
+    width: 50%;
+    margin: 25px;
+    float: right;
 }
 
+#pieChart {
+    float: right;
+    height: 300px;
+    width: 300px;
+}
 
-/* .attendance {
+#attendance {
+    width: 50%;
+    height: 300px;
+}
+
+.attendance {
     border: #000 solid 2px;
-    height: 400px;
+    height: 600px;
     margin-top: 10px;
-} */
+    float: left;
+}
+
+@media only screen and (max-width:600px) {
+    .dataPage {
+        margin: 0;
+        padding: 15px;
+        /* border: #c201ac solid 2px; */
+        background-color: white;
+        display: block;
+    }
+}
 
 
 /* End of Styles for data.html */
