@@ -28,61 +28,62 @@ new Chart("resultsYear", {
         labels: xYear,
         datasets: [{
             backgroundColor: barcolors,
-            data: yMarks
-        }]
+            data: yMarks,
+        }, ],
     },
     options: {
         legend: { display: false },
         title: {
             display: true,
-            text: "KCPE Performance 2015 -2021"
-        }
-    }
+            text: "KCPE Performance 2015 -2021",
+        },
+    },
 });
 
 //End of Results Graph
-google.charts.load('current', { 'packages': ['corechart'] });
+google.charts.load("current", { packages: ["corechart"] });
 google.charts.setOnLoadCallback(resultChart);
 
 function resultChart() {
     var results = google.visualization.arrayToDataTable([
-        ['Subject', 'Marks'],
-        ['Maths', 80],
-        ['English', 70],
-        ['Kiswahili', 60],
-        ['Music', 12],
-        ['Science', 90],
-        ['Agriculture', 50],
-        ['Religious Education', 45]
+        ["Subject", "Marks"],
+        ["Maths", 80],
+        ["English", 70],
+        ["Kiswahili", 60],
+        ["Music", 12],
+        ["Science", 90],
+        ["Agriculture", 50],
+        ["Religious Education", 45],
     ]);
-    var progressdata = { 'title': 'Results Term 1 2022', 'width': 500, 'height': 300 };
+    var progressdata = { title: "Results Term 1 2022", width: 500, height: 300 };
 
-    var chart = new
-    google.visualization.PieChart(document.getElementById('pieChart'));
+    var chart = new google.visualization.PieChart(
+        document.getElementById("pieChart")
+    );
     chart.draw(results, progressdata);
 }
 
-google.charts.load('current', { 'packages': ['corechart'] });
+google.charts.load("current", { packages: ["corechart"] });
 google.charts.setOnLoadCallback(attendanceChart);
 
 function attendanceChart() {
     var results = google.visualization.arrayToDataTable([
-        ['Class', 'Number'],
-        ['Grade 1', 50],
-        ['Grade 2', 40],
-        ['Grade 3', 50],
-        ['Grade 4', 42],
-        ['Grade 5', 40],
-        ['Grade 6', 50],
-        ['Grade 7', 45],
-        ['Grade 8', 45]
+        ["Class", "Number"],
+        ["Grade 1", 50],
+        ["Grade 2", 40],
+        ["Grade 3", 50],
+        ["Grade 4", 42],
+        ["Grade 5", 40],
+        ["Grade 6", 50],
+        ["Grade 7", 45],
+        ["Grade 8", 45],
     ]);
-    var progressdata = { 'title': 'Results Term 1 2022', 'width': 500, 'height': 300 };
+    var progressdata = { title: "Results Term 1 2022", width: 500, height: 300 };
 
-    var chart = new
-    google.visualization.PieChart(document.getElementById('attendance'));
+    var chart = new google.visualization.PieChart(
+        document.getElementById("attendance")
+    );
     chart.draw(results, progressdata);
 }
-
 
 //Data Page above

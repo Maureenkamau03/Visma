@@ -11,17 +11,19 @@
 
 <body>
     <div class="dataPage">
-
         <div class="performance">
             <h1>School Performance</h1>
         </div>
     </div>
     <div id="performanceUpdate">
-        <button class="openForm" onclick="openForm()"> Registration of Results</button>
+        <button class="openForm" onclick="openForm()">
+        Registration of Results
+      </button>
         <!-- <input type="button" value="Add Student Results >" onclick="progressUpdate()" /><br /><br /> -->
 
         <form action="/action.php" method="post" id="form">
-            <h3>Exam Registration
+            <h3>
+                Exam Registration
                 <button class="closeForm" onclick="closeForm()">Close Form</button>
             </h3>
             Term
@@ -31,44 +33,60 @@
           <option value="">3</option>
         </select>
             <select name="class Name">
-        <option value="class">Class Pre-Unit</option>
-        <option value="class">Class GPP1</option>
-        <option value="class">Class GPP2</option>
-        <option value="class">Class G1</option>
-        <option value="class">Class G2</option>
-        <option value="class">Class G3</option>
-        <option value="class">Class G4</option>
-        <option value="class">Class G5</option>
-        <option value="class">Class G6</option>
-        <option value="class">Class G7</option>
-        <option value="class">Class G8</option>
-      </select>
+          <option value="class">Class Pre-Unit</option>
+          <option value="class">Class GPP1</option>
+          <option value="class">Class GPP2</option>
+          <option value="class">Class G1</option>
+          <option value="class">Class G2</option>
+          <option value="class">Class G3</option>
+          <option value="class">Class G4</option>
+          <option value="class">Class G5</option>
+          <option value="class">Class G6</option>
+          <option value="class">Class G7</option>
+          <option value="class">Class G8</option>
+        </select>
             <br />
             <br />
-            <p>First Name :
-                <input type="text" name="stdName" id="stdName" placeholder="first Name" required /></p>
-            <p>Last Name :<input type="text" name="grade" id="grade" placeholder="Last Name" required /></p>
-            <p> Math : <input type="number" id="Math" required /> </p>
-            <p>Science<input type="number" name="science" id="science" min="0" max="100" required /></p>
-            <p>C/I/HRE <input type="number" name="" id="kisw" min="0" max="100" required/> </p>
-            <p>Kiswahili
-                <input type="number" name="" id="eng" min="0" max="100" required/></p>
+            <p>
+                First Name :
+                <input type="text" name="stdName" id="stdName" placeholder="first Name" required />
+            </p>
+            <p>
+                Last Name :<input type="text" name="grade" id="grade" placeholder="Last Name" required />
+            </p>
+            <p>Math : <input type="number" id="Math" required /></p>
+            <p>
+                Science<input type="number" name="science" id="science" min="0" max="100" required />
+            </p>
+            <p>
+                C/I/HRE
+                <input type="number" name="" id="kisw" min="0" max="100" required />
+            </p>
+            <p>
+                Kiswahili
+                <input type="number" name="" id="eng" min="0" max="100" required />
+            </p>
             <p>English <input type="number" name="" id="eng" required /></p>
-            <p>Agriculture
-                <input type="number" name="" id="agric" min="0" max="100" required/></p>
-            <p>Home Science<input type="number" name="" id="hmScien" required/></p>
-            <p>Music
-                <input type="number" name="" id="music" min="0" max="100" required/></p>
-            <p>Hygience
-                <input type="number" id="hygiene" min="0" max="100" required/></p>
-            <p>Computer
-                <input type="number" id="comp" min="0" max="100" required/>
-                <br><br>
+            <p>
+                Agriculture
+                <input type="number" name="" id="agric" min="0" max="100" required />
+            </p>
+            <p>Home Science<input type="number" name="" id="hmScien" required /></p>
+            <p>
+                Music
+                <input type="number" name="" id="music" min="0" max="100" required />
+            </p>
+            <p>
+                Hygience
+                <input type="number" id="hygiene" min="0" max="100" required />
+            </p>
+            <p>
+                Computer
+                <input type="number" id="comp" min="0" max="100" required />
+                <br /><br />
             </p>
             <input type="button" value="Submit" id="submit" onclick="alert('Submitted!!')" />
-
         </form>
-
     </div>
 
     <div id="firstSection">
@@ -76,7 +94,7 @@
         <div id="infoProgress">
             <canvas id="resultsYear"></canvas>
             <span id="p">
-              <h1>The Students </h1>
+          <h1>The Students</h1>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum sit
           omnis suscipit a voluptatem quo error id magni ea libero, dolorum est
           deleniti voluptatibus distinctio quos. Animi esse eligendi sit! Lorem,
