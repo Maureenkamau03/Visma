@@ -17,28 +17,32 @@
     </div>
 
     <div id="firstSection">
-
         <h2>The Past Classes Performance</h2>
         <div id="infoProgress">
             <canvas id="resultsYear"></canvas>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum sit omnis suscipit a voluptatem quo error id magni ea libero, dolorum est deleniti voluptatibus distinctio quos. Animi esse eligendi sit! Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit. Rerum sit omnis suscipit a voluptatem quo error id magni ea libero, dolorum est deleniti voluptatibus distinctio quos. Animi esse eligendi sit!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum sit omnis suscipit a voluptatem
-                quo error id magni ea libero, dolorum est deleniti voluptatibus distinctio quos. Animi esse eligendi sit!
-            </p>
+            <span p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum sit
+          omnis suscipit a voluptatem quo error id magni ea libero, dolorum est
+          deleniti voluptatibus distinctio quos. Animi esse eligendi sit! Lorem,
+          ipsum dolor sit amet consectetur adipisicing elit. Rerum sit omnis
+          suscipit a voluptatem quo error id magni ea libero, dolorum est
+          deleniti voluptatibus distinctio quos. Animi esse eligendi sit!Lorem,
+          ipsum dolor sit amet consectetur adipisicing elit. Rerum sit omnis
+          suscipit a voluptatem quo error id magni ea libero, dolorum est
+          deleniti voluptatibus distinctio quos. Animi esse eligendi sit!
+        </span>
         </div>
     </div>
     <div class="progressStatus">
         <h2>Class progress</h2>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem ad tempore dolore blanditiis, perspiciatis, quibusdam debitis delectus vel praesentium officia maiores ratione distinctio reiciendis. Quia culpa iure voluptates eveniet.
-        <div id="piechart">
-
-        </div>
+        <div id="piechart"></div>
     </div>
     <div class="attendanceClass">
         <h2>Attendace</h2>
-        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat libero, numquam nemo molestiae facere exercitationem molestias porro aperiam provident, nulla nobis adipisci voluptatem itaque. At accusamus voluptate nihil impedit animi. Lorem
-            ipsum, dolor sit amet consectetur adipisicing elit. Quaerat libero, numquam nemo molestiae facere exercitationem molestias porro aperiam provident, nulla nobis adipisci voluptatem itaque. At accusamus voluptate nihil impedit animi.
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat libero, numquam nemo molestiae facere exercitationem molestias porro aperiam provident, nulla nobis adipisci voluptatem itaque. At accusamus voluptate nihil impedit animi. Lorem ipsum,
+            dolor sit amet consectetur adipisicing elit. Quaerat libero, numquam nemo molestiae facere exercitationem molestias porro aperiam provident, nulla nobis adipisci voluptatem itaque. At accusamus voluptate nihil impedit animi.
         </p>
         <div id="attendance"></div>
     </div>
@@ -46,62 +50,23 @@
         <input type="button" value="Add Student Results >" onclick="progressUpdate()" /><br /><br />
         <form action="" method="post" id="form">
             <select name="class Name">
-      <option value="class">Class Pre-Unit</option>
-      <option value="class">Class GPP1</option>
-      <option value="class">Class GPP2</option>
-      <option value="class">Class G1</option>
-      <option value="class">Class G2</option>
-      <option value="class">Class G3</option>
-      <option value="class">Class G4</option>
-      <option value="class">Class G5</option>
-      <option value="class">Class G6</option>
-      <option value="class">Class G7</option>
-      <option value="class">Class G8</option>
-    </select>
+          <option value="class">Class Pre-Unit</option>
+          <option value="class">Class GPP1</option>
+          <option value="class">Class GPP2</option>
+          <option value="class">Class G1</option>
+          <option value="class">Class G2</option>
+          <option value="class">Class G3</option>
+          <option value="class">Class G4</option>
+          <option value="class">Class G5</option>
+          <option value="class">Class G6</option>
+          <option value="class">Class G7</option>
+          <option value="class">Class G8</option>
+        </select>
             <br />
             <br /> First Name :
-            <input type="text" name="stdName" id="stdName" placeholder="first Name" required />
-            <br /><br /> Last Name :
-            <input type="text" name="grade" id="grade" placeholder="Last Name" required/>
+            <input type="text" name="stdName" id="stdName" placeholder="first Name" required /> Last Name :
+            <input type="text" name="grade" id="grade" placeholder="Last Name" required />
             <br /><br />
-            <select name="subjects" id="subjects" required>
-      <option value="Math">Math</option>
-      <option value="Science">Science</option>
-      <option value="IRE">IRE</option>
-      <option value="CRE">CRE</option>
-      <option value="HRE">HRE</option>
-      <option value="Kiswahili">Kiswahili</option>
-      <option value="English">English</option>
-      <option value="Agriculture">Agriculture</option>
-      <option value="Home Science">Home Science</option>
-      <option value="Music">Music</option>
-      <option value="Hygience">Hygience</option></select> >
-            <br /><br />
-            <input type="number" name="subjectPerformance" id="subjectPerformance" min="0" max="100" /><br /><br />
-            <select name="subjects" id="subjects" required>
-      <option value="Math">Math</option>
-      <option value="Science">Science</option>
-      <option value="IRE">IRE</option>
-      <option value="CRE">CRE</option>
-      <option value="HRE">HRE</option>
-      <option value="Kiswahili">Kiswahili</option>
-      <option value="English">English</option>
-      <option value="Agriculture">Agriculture</option>
-      <option value="Home Science">Home Science</option>
-      <option value="Music">Music</option>
-      <option value="Hygience">Hygience</option></select> '
-            <select name="subjects" id="subjects" required>
-        <option value="Math">Math</option>
-        <option value="Science">Science</option>
-        <option value="IRE">IRE</option>
-        <option value="CRE">CRE</option>
-        <option value="HRE">HRE</option>
-        <option value="Kiswahili">Kiswahili</option>
-        <option value="English">English</option>
-        <option value="Agriculture">Agriculture</option>
-        <option value="Home Science">Home Science</option>
-        <option value="Music">Music</option>
-        <option value="Hygience">Hygience</option></select>
             <select name="subjects" id="subjects" required>
           <option value="Math">Math</option>
           <option value="Science">Science</option>
@@ -113,100 +78,135 @@
           <option value="Agriculture">Agriculture</option>
           <option value="Home Science">Home Science</option>
           <option value="Music">Music</option>
-          <option value="Hygience">Hygience</option></select>
+          <option value="Hygience">Hygience</option>
+        </select>
+
+            <input type="number" name="subjectPerformance" id="subjectPerformance" min="0" max="100" /><br /><br />
+
             <select name="subjects" id="subjects" required>
-            <option value="Math">Math</option>
-            <option value="Science">Science</option>
-            <option value="IRE">IRE</option>
-            <option value="CRE">CRE</option>
-            <option value="HRE">HRE</option>
-            <option value="Kiswahili">Kiswahili</option>
-            <option value="English">English</option>
-            <option value="Agriculture">Agriculture</option>
-            <option value="Home Science">Home Science</option>
-            <option value="Music">Music</option>
-            <option value="Hygience">Hygience</option></select>
+          <option value="Math">Math</option>
+          <option value="Science">Science</option>
+          <option value="IRE">IRE</option>
+          <option value="CRE">CRE</option>
+          <option value="HRE">HRE</option>
+          <option value="Kiswahili">Kiswahili</option>
+          <option value="English">English</option>
+          <option value="Agriculture">Agriculture</option>
+          <option value="Home Science">Home Science</option>
+          <option value="Music">Music</option>
+          <option value="Hygience">Hygience</option>
+        </select>
+            <input type="number" name="subjectPerformance" id="subjectPerformance" min="0" max="100" /><br /><br />
+
             <select name="subjects" id="subjects" required>
-              <option value="Math">Math</option>
-              <option value="Science">Science</option>
-              <option value="IRE">IRE</option>
-              <option value="CRE">CRE</option>
-              <option value="HRE">HRE</option>
-              <option value="Kiswahili">Kiswahili</option>
-              <option value="English">English</option>
-              <option value="Agriculture">Agriculture</option>
-              <option value="Home Science">Home Science</option>
-              <option value="Music">Music</option>
-              <option value="Hygience">Hygience</option></select>
+          <option value="Math">Math</option>
+          <option value="Science">Science</option>
+          <option value="IRE">IRE</option>
+          <option value="CRE">CRE</option>
+          <option value="HRE">HRE</option>
+          <option value="Kiswahili">Kiswahili</option>
+          <option value="English">English</option>
+          <option value="Agriculture">Agriculture</option>
+          <option value="Home Science">Home Science</option>
+          <option value="Music">Music</option>
+          <option value="Hygience">Hygience</option>
+        </select>
+            <input type="number" name="subjectPerformance" id="subjectPerformance" min="0" max="100" /><br /><br />
+
             <select name="subjects" id="subjects" required>
-                <option value="Math">Math</option>
-                <option value="Science">Science</option>
-                <option value="IRE">IRE</option>
-                <option value="CRE">CRE</option>
-                <option value="HRE">HRE</option>
-                <option value="Kiswahili">Kiswahili</option>
-                <option value="English">English</option>
-                <option value="Agriculture">Agriculture</option>
-                <option value="Home Science">Home Science</option>
-                <option value="Music">Music</option>
-                <option value="Hygience">Hygience</option></select>
+          <option value="Math">Math</option>
+          <option value="Science">Science</option>
+          <option value="IRE">IRE</option>
+          <option value="CRE">CRE</option>
+          <option value="HRE">HRE</option>
+          <option value="Kiswahili">Kiswahili</option>
+          <option value="English">English</option>
+          <option value="Agriculture">Agriculture</option>
+          <option value="Home Science">Home Science</option>
+          <option value="Music">Music</option>
+          <option value="Hygience">Hygience</option>
+        </select>
+            <input type="number" name="subjectPerformance" id="subjectPerformance" min="0" max="100" /><br /><br />
+
             <select name="subjects" id="subjects" required>
-                  <option value="Math">Math</option>
-                  <option value="Science">Science</option>
-                  <option value="IRE">IRE</option>
-                  <option value="CRE">CRE</option>
-                  <option value="HRE">HRE</option>
-                  <option value="Kiswahili">Kiswahili</option>
-                  <option value="English">English</option>
-                  <option value="Agriculture">Agriculture</option>
-                  <option value="Home Science">Home Science</option>
-                  <option value="Music">Music</option>
-                  <option value="Hygience">Hygience</option></select>
+          <option value="Math">Math</option>
+          <option value="Science">Science</option>
+          <option value="IRE">IRE</option>
+          <option value="CRE">CRE</option>
+          <option value="HRE">HRE</option>
+          <option value="Kiswahili">Kiswahili</option>
+          <option value="English">English</option>
+          <option value="Agriculture">Agriculture</option>
+          <option value="Home Science">Home Science</option>
+          <option value="Music">Music</option>
+          <option value="Hygience">Hygience</option>
+        </select>
+            <input type="number" name="subjectPerformance" id="subjectPerformance" min="0" max="100" /><br /><br />
+
             <select name="subjects" id="subjects" required>
-                    <option value="Math">Math</option>
-                    <option value="Science">Science</option>
-                    <option value="IRE">IRE</option>
-                    <option value="CRE">CRE</option>
-                    <option value="HRE">HRE</option>
-                    <option value="Kiswahili">Kiswahili</option>
-                    <option value="English">English</option>
-                    <option value="Agriculture">Agriculture</option>
-                    <option value="Home Science">Home Science</option>
-                    <option value="Music">Music</option>
-                    <option value="Hygience">Hygience</option></select>
+          <option value="Math">Math</option>
+          <option value="Science">Science</option>
+          <option value="IRE">IRE</option>
+          <option value="CRE">CRE</option>
+          <option value="HRE">HRE</option>
+          <option value="Kiswahili">Kiswahili</option>
+          <option value="English">English</option>
+          <option value="Agriculture">Agriculture</option>
+          <option value="Home Science">Home Science</option>
+          <option value="Music">Music</option>
+          <option value="Hygience">Hygience</option>
+        </select>
+            <input type="number" name="subjectPerformance" id="subjectPerformance" min="0" max="100" /><br /><br />
             <select name="subjects" id="subjects" required>
-                      <option value="Math">Math</option>
-                      <option value="Science">Science</option>
-                      <option value="IRE">IRE</option>
-                      <option value="CRE">CRE</option>
-                      <option value="HRE">HRE</option>
-                      <option value="Kiswahili">Kiswahili</option>
-                      <option value="English">English</option>
-                      <option value="Agriculture">Agriculture</option>
-                      <option value="Home Science">Home Science</option>
-                      <option value="Music">Music</option>
-                      <option value="Hygience">Hygience</option></select>
+          <option value="Math">Math</option>
+          <option value="Science">Science</option>
+          <option value="IRE">IRE</option>
+          <option value="CRE">CRE</option>
+          <option value="HRE">HRE</option>
+          <option value="Kiswahili">Kiswahili</option>
+          <option value="English">English</option>
+          <option value="Agriculture">Agriculture</option>
+          <option value="Home Science">Home Science</option>
+          <option value="Music">Music</option>
+          <option value="Hygience">Hygience</option>
+        </select>
+            <input type="number" name="subjectPerformance" id="subjectPerformance" min="0" max="100" /><br /><br />
             <select name="subjects" id="subjects" required>
-                        <option value="Math">Math</option>
-                        <option value="Science">Science</option>
-                        <option value="IRE">IRE</option>
-                        <option value="CRE">CRE</option>
-                        <option value="HRE">HRE</option>
-                        <option value="Kiswahili">Kiswahili</option>
-                        <option value="English">English</option>
-                        <option value="Agriculture">Agriculture</option>
-                        <option value="Home Science">Home Science</option>
-                        <option value="Music">Music</option>
-                        <option value="Hygience">Hygience</option></select>
+          <option value="Math">Math</option>
+          <option value="Science">Science</option>
+          <option value="IRE">IRE</option>
+          <option value="CRE">CRE</option>
+          <option value="HRE">HRE</option>
+          <option value="Kiswahili">Kiswahili</option>
+          <option value="English">English</option>
+          <option value="Agriculture">Agriculture</option>
+          <option value="Home Science">Home Science</option>
+          <option value="Music">Music</option>
+          <option value="Hygience">Hygience</option>
+        </select>
+            <input type="number" name="subjectPerformance" id="subjectPerformance" min="0" max="100" /><br /><br />
+            <select name="subjects" id="subjects" required>
+          <option value="Math">Math</option>
+          <option value="Science">Science</option>
+          <option value="IRE">IRE</option>
+          <option value="CRE">CRE</option>
+          <option value="HRE">HRE</option>
+          <option value="Kiswahili">Kiswahili</option>
+          <option value="English">English</option>
+          <option value="Agriculture">Agriculture</option>
+          <option value="Home Science">Home Science</option>
+          <option value="Music">Music</option>
+          <option value="Hygience">Hygience</option>
+        </select>
+            <input type="number" name="subjectPerformance" id="subjectPerformance" min="0" max="100" /><br /><br />
 
             <input type="button" value="Submit" id="submit" onclick="alert('Submitted!!')" />
         </form>
-
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script type="text/javascript" du src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="assets/js/app.js"></script>
-
 </body>
 
 </html>
