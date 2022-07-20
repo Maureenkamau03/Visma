@@ -32,7 +32,7 @@
       <div class="performance">
         <h1>School Performance</h1>
       </div>
-    </div>
+   
     <div id="performanceUpdate">
       <button class="openForm" onclick="openForm()">
         Registration of Results
@@ -50,7 +50,7 @@
           <option value="">2</option>
           <option value="">3</option>
         </select>
-        <select name="class Name">
+        <select name="class Name" id="className">
           <option value="class">Class Pre-Unit</option>
           <option value="class">Class GPP1</option>
           <option value="class">Class GPP2</option>
@@ -65,24 +65,18 @@
         </select>
         <br />
         <br />
-        <label for="fName">First Name :</label><br />
+        <label for="stdName">Student Name :</label><br />
         <input
           type="text"
           name="stdName"
           id="stdName"
-          placeholder="first Name"
+          placeholder="Student Name"
           required
         />
         <br />
-        <label for="lName">Last Name :</label><br /><input
-          type="text"
-          name="grade"
-          id="grade"
-          placeholder="Last Name"
-          required
-        /><br />
+       
         <label for="sMath">Mathematics : </label><br>
-        <input type="number" id="Math" required /><br>
+        <input type="number" id="math" required /><br>
         <label for="sscie"> Science </label><br>
         <input
           type="number"
@@ -95,31 +89,9 @@
         <label for="sRe">C. /I. /H.R.E.</label><br />
         <input type="number" name="" id="kisw" min="0" max="100" required /><br>
         <label for="sKisw">Kiswahili</label><br>
-        <input type="number" name="" id="eng" required /><br />
+        <input type="number" name="" id="sKisw" required /><br />
         <label for="sEng">English</label><br>
         <input type="number" name="" id="eng" required /><br>
-        <label for="sAgric">Agriculture</label><br>
-        <input
-          type="number"
-          name=""
-          id="agric"
-          min="0"
-          max="100"
-          required
-        /><br />
-        <label for="sHmScie">Home Science</label><br>
-        <input type="number" name="" id="hmScien" required /><br />
-        <label for="sMusic">Music</label><br>
-        <input
-          type="number"
-          name=""
-          id="music"
-          min="0"
-          max="100"
-          required
-        /><br />
-        <label for="sHygi">Hygience</label><br>
-        <input type="number" id="hygiene" min="0" max="100" required /><br />
         <label for="sComp">Computer</label><br>
         <input type="number" id="comp" min="0" max="100" required /> <br>
 
@@ -171,6 +143,8 @@
       </p>
       <div id="attendance"></div>
     </div>
+
+</div>
     <footer></footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>

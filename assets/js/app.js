@@ -27,6 +27,33 @@ function closeForm() {
 //     }
 // }
 //end of input Panel
+//Store data from User
+function resultsData() {
+    var term = document.getElementById("term").value;
+    var classr = document.getElementById("className").value;
+    var studentName = document.getElementById("stdName").value;
+    var math = document.getElementById("math").value;
+    var science = document.getElementById("sscie").value;
+    var religion = document.getElementById("sRe").value;
+    var kiswahili = document.getElementById("sKisw").value;
+    var english = document.getElementById("eng").value;
+    var computer = document.getElementById("comp").value;
+
+    const school = {
+        term: term,
+        classr: classr,
+        studentName: studentName,
+        math: math,
+        science: science,
+        religion: religion,
+        kiswahili: kiswahili,
+        english: english,
+        computer: computer
+    }
+    window.localStorage.setItem(key, JSON.stringify(school));
+
+}
+//
 //Results Graph
 var xYear = ["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"];
 var yMarks = [329, 234, 359, 401, 378, 356, 333, 0];
