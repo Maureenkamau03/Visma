@@ -36,13 +36,13 @@
       <div class="performance ">
         <h1>School Performance</h1>
       </div>
-      <button class="openForm " onclick="openForm() " id="formbtn ">
+      <button class="openForm "  onclick="openForm() " id="formbtn ">
         Registration of Results
       </button>
-    <div id="performanceUpdate ">
+    <div id="performanceUpdate " >
      
       <!-- <input type="button " value="Add Student Results>" onclick="progressUpdate()" /><br /><br /> -->
-    <form action=" " method="post" id="form" class="modal" hidden>
+    <form action=" " method="post" id="form" class="modal" style="display:none;">
         <h3>
             Exam Registration
             <button type="button" class="closeForm" onclick="closeForm()">&times;</button>
@@ -85,7 +85,9 @@
         <label for="sComp">Computer</label><br>
         <input type="number" id="comp" min="0" max="100" required /> <br>
 
-        <input type="submit" value="Submit" id="submit" onclick="resultsData()&&alert('Submitted!!')" />
+        <input type="submit" value="Submit" id="submit" onclick="addClassResults()&&alert('Submitted!!')" />
+        <button type="button" class="closeForm" id="cancel" onclick="closeForm()">Cancel</button>
+
     </form>
     </div>
 
