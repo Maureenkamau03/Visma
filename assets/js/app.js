@@ -1,18 +1,26 @@
-// Test Run
-function myFunction() {
-    var x = document.getElementById("navbar");
-    if (x.className === "navbar") {
-        x.className += " responsive";
-    } else {
-        x.className = "navbar";
-    }
-}
-
 // Data Page Below
 // Hide New Results Input Panel 1.
+
+// formbtn = document.getElementById('formbtn')
+// element.addEventListener('click', showForm);
+
+// function showForm() {
+//     document.getElementById("formHere").innerHTML = document.getElementById("form");
+
+// // }
+
 function openForm() {
     document.getElementById("form").style.display = "block";
 }
+// // ev.preventDefault();
+// // function openForm
+// var show = document.getElementById("performanceUpdate");
+
+// window.onclick = function(event) {
+//     if (event.target == show) {
+//         show.style.display = "block";
+//     }
+// }
 
 function closeForm() {
     document.getElementById("form").style.display = "none";
@@ -28,33 +36,33 @@ function closeForm() {
 // }
 //end of input Panel
 //Store data from User
-function resultsData() {
-    var term = document.getElementById("term").value;
-    var classr = document.getElementById("className").value;
-    var studentName = document.getElementById("stdName").value;
-    var math = document.getElementById("math").value;
-    var science = document.getElementById("sscie").value;
-    var religion = document.getElementById("sRe").value;
-    var kiswahili = document.getElementById("sKisw").value;
-    var english = document.getElementById("eng").value;
-    var computer = document.getElementById("comp").value;
+let school = [];
 
-    const school = {
-        term: term,
-        classr: classr,
-        studentName: studentName,
-        math: math,
-        science: science,
-        religion: religion,
-        kiswahili: kiswahili,
-        english: english,
-        computer: computer
+addClassResults = (ev) => {
+        // ev.preventDefault();
+        let classes = {
+            classr: document.getElementById("className").value,
+            // {
+            //                 studentName =document.getElementById("stdName").value{
+            //                          math = document.getElementById("math").value,
+            //                          science : document.getElementById("sscie").value,
+            //                          religion : document.getElementById("sRe").value,
+            //                          kiswahili : document.getElementById("sKisw").value,
+            //                          english: document.getElementById("eng").value,
+            //                          computer: document.getElementById("comp").value
+            //     }
+            // }
+        }
+        school.push(classes);
+        console.log(school)
+        document.forms[0].reset();
+
+
+        localStorage.setItem(key, JSON.stringify(school));
+
     }
-    window.localStorage.setItem(key, JSON.stringify(school));
-
-}
-//
-//Results Graph
+    //
+    //Results Graph
 var xYear = ["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"];
 var yMarks = [329, 234, 359, 401, 378, 356, 333, 0];
 var barcolors = ["red", "lime", "brown", "black", "blue", "yellow", "green"];
@@ -123,4 +131,4 @@ function attendanceChart() {
     chart.draw(results, progressdata);
 }
 
-//Data Page above
+// Data Page above
