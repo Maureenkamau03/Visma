@@ -21,9 +21,27 @@ function emailSubmit() {
 // signup js ends here
 // Data Page Below
 // Hide New Results Input Panel 1.
+
+// formbtn = document.getElementById('formbtn')
+// element.addEventListener('click', showForm);
+
+// function showForm() {
+//     document.getElementById("formHere").innerHTML = document.getElementById("form");
+
+// // }
+
 function openForm() {
     document.getElementById("form").style.display = "block";
 }
+// // ev.preventDefault();
+// // function openForm
+// var show = document.getElementById("performanceUpdate");
+
+// window.onclick = function(event) {
+//     if (event.target == show) {
+//         show.style.display = "block";
+//     }
+// }
 
 function closeForm() {
     document.getElementById("form").style.display = "none";
@@ -38,7 +56,34 @@ function closeForm() {
 //     }
 // }
 //end of input Panel
-//Results Graph
+//Store data from User
+let school = [];
+
+addClassResults = (ev) => {
+        // ev.preventDefault();
+        let classes = {
+            classr: document.getElementById("className").value,
+            // {
+            //                 studentName =document.getElementById("stdName").value{
+            //                          math = document.getElementById("math").value,
+            //                          science : document.getElementById("sscie").value,
+            //                          religion : document.getElementById("sRe").value,
+            //                          kiswahili : document.getElementById("sKisw").value,
+            //                          english: document.getElementById("eng").value,
+            //                          computer: document.getElementById("comp").value
+            //     }
+            // }
+        }
+        school.push(classes);
+        console.log(school)
+        document.forms[0].reset();
+
+
+        localStorage.setItem(key, JSON.stringify(school));
+
+    }
+    //
+    //Results Graph
 var xYear = ["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"];
 var yMarks = [329, 234, 359, 401, 378, 356, 333, 0];
 var barcolors = ["red", "lime", "brown", "black", "blue", "yellow", "green"];
@@ -110,4 +155,4 @@ function attendanceChart() {
     chart.draw(population, classData);
 }
 
-//Data Page above
+// Data Page above
