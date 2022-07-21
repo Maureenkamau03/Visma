@@ -8,7 +8,7 @@
 	position: relative;
 	height: 500px;
 	/* background-color: red; */
-	background-image: url(/assets/images/undraw_contact_us_re_4qqt.svg);
+	background-image: url(/assets/images/cont.jpeg);
 	background-size: cover;
 	background-position: top right;
 }
@@ -24,7 +24,7 @@
 	top: 80%;
 	left: 10%;
 	font-size: large;
-	color: rgb(255, 255, 255);
+	color: black;
 }
 .contact-group {
 	background-color: rgb(255, 255, 255);
