@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 <body>
     <!--NavigationBar-->
@@ -25,8 +28,35 @@
     <p><a href="#"><i class="icon-name" title="My Dashboard">My Dashboard</i></a></p>
     <p><a href="#"><i class="icon-name" title="Tests">Tests</i></a></p>
   </div>
-  <button class="btn" id="expand_collapse_all" aria-expanded="false" data-expand="false" data-url="/courses/659/collapse_all_modules" aria-label="Expand All Modules">Expand all</button>     
-        <div class="tab-link" role="navigation" aria-label="Courses navigation menu">
+
+  <button class="btn">Expand all</button>     
+  <form action="/courses/659/start_offline_web_export" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="fHPlzqcwICg9IoD9q6TXU4pRgCgtI1GdeU7Wru6bplUVK4aq4klMSk1k7pbH6pIpzGDkaxttCd4yeKzh2qvMYQ==">
+    <button type="submit" class="btn offline_web_export" style="display: none;">
+      <i class="icon-export" role="presentation"></i>
+      Export Course Content
+    </button>
+</form>
+<div class="inline-block module_index_tools">
+<a class="al-trigger btn" role="button" aria-haspopup="true" aria-owns="toolbar-1" href="#" tabindex="0">
+  <i class="icon-more" aria-hidden="true" title="Commons Favourites"></i>
+  <span class="screenreader-only">Modules Settings</span>
+</a> 
+
+<ul id="toolbar-1" class="al-options ui-menu ui-widget ui-widget-content ui-corner-all ui-popup ui-kyle-menu use-css-transitions-for-show-hide" role="menu" aria-hidden="true" aria-expanded="false" tabindex="0" style="display: none; top: 64px; left: 600px;" aria-activedescendant="ui-id-1"><span class="ui-menu-carat" style="left: 137px;"><span></span></span>
+  <li role="presentation" class="module_index_menu ui-menu-item"><a href="https://moringaschool.instructure.com/courses/659/external_tools/1?launch_type=module_index_menu" data-tool-id="1" data-tool-launch-type="module_index_menu" class="menu_tray_tool_link ui-corner-all" id="ui-id-1" tabindex="-1" role="menuitem">
+<i class="icon-commons"></i>
+Commons Favourites</a></li>
+  
+</ul>
+</div>
+<small class="muted">
+    Last viewed:
+    <a href="#visma">
+      30 Jun at 9:12
+    </a>
+  </small>
+
+  <div class="tab-link" role="navigation" aria-label="Courses navigation menu">
             <ul class="section-tabs">
                     <li><a class="section" href="#">Home</a></li>
                     <li><a class="section" href="#">Announcements</a></li>
@@ -41,6 +71,62 @@
             </ul>
         </div>
     </div> 
+  
+  
+    <nav class="nav-wrapper">
+<div class="container">
+  <a href="#test.html" class="brand-logo">TEST</a>
+</div>
+    </nav> 
+
+    <section class="container-section">
+      <div class="row">
+        <div class="col s12 16 offset-13">
+
+          <form class="myform" name="id" onsubmit="submitted(event)">
+            <h4 class="center-align">STUDENT NAME</h4>
+
+            <div class="progress">
+              <div class="indeterminate"></div>
+            </div>
+
+<div class="input-field">
+  <i class="material-icons white-text prefix">Account box</i>
+  <input type="text" class="white-text" id="name">
+  <label for="name">Name</label>
+  <p class="center"><button type="submit" class="btn" onclick="this.style.display='none'">Submit Name</button></p>
+</div>
+
+<div>
+  <p class="white-text-green">TEST RULES :</p>
+  <p class="black-text-green">1. You<strong>cannot</strong>skip any question.</p>
+  <p class="black-text-green">2.You<strong>cannot</strong>got to the previous question.</p>
+  <p class="black-text-green">3.Try attempting<strong>all</strong>questions.</p>
+</div>
+
+<div class="progress">
+  <div class="indeterminate"></div>
+</div>
+
+<p 
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!--Compiled and minified javascript-->
+    <script src="./assets/js/app.js"></script>
+
+    <script>
+      function submitted(e){
+        e.preventDefault();
+
+        let namee = documents.forms["id"]["name"].value;
+        sessionStorage.setItem("name",namee);
+      }
+    </script>
 </body>
 </html>
 
