@@ -8,9 +8,9 @@
 	position: relative;
 	height: 500px;
 	/* background-color: red; */
-	background-image: url(/assets/images/contact-banner.jpg);
+	background-image: url(/assets/images/undraw_contact_us_re_4qqt.svg);
 	background-size: cover;
-	background-position: rigt;
+	background-position: top right;
 }
 .hero-img img {
 	width: inherit;
@@ -96,6 +96,7 @@
 }
 .operation-infor {
 	margin-top: 40px;
+	line-height: 50px;
 }
 /* big icon on contacts div */
 .icon-main {

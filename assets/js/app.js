@@ -24,8 +24,8 @@ emailSubmitButton.addEventListener("click", emailSubmit);
 // contact us page js ends here
 // signup
 let signUpDetails = [];
-const signup = (event) => {
-	event.preventDefault();
+const signup = (e) => {
+	e.preventDefault();
 
 	let signupInfor = {
 		firstName: document.getElementById("signup-firstname").value,
