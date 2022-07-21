@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta viewport " content="width=device-width, initial-scale=1.0 " />
+    <link rel="shortcut icon " href="./assets/images/logoVS.png " type="image/png ">
+
+    <link rel="stylesheet " href="./assets/css/styles.css " />
+
+    <title>Visma School</title>
+</head>
+
+<body>
+    <div class="navbar ">
+        <div class="logo ">
+          <img src="./assets/images/logoVS.png " alt="Visma School VS logo ">
+            <h1>Visma School</h1>
+        </div>
+        <div class="navs ">
+            <ul>
+                <li><a href="index.html " class="active ">Home</a></li>
+                <li><a href="data.html ">Data</a></li>
+                <li><a href="test.html ">Test</a></li>
+                <li><a href="contactus.html ">Contact Us</a></li>
+                <li><a href="signin.html ">Sign In</a></li>
+                <li><a href="signout.html ">Sign Out</a></li>
+                <a href="javascript:void(0); " class="icon " onclick="myfunction() ">
+                    <i class="fa fa-bars "></i
+          ></a>
+        </ul>
+      </div>
+    </div>
+    <div class="dataPage ">
+      <div class="performance ">
+        <h1>School Performance</h1>
+      </div>
+      <button class="openForm " onclick="openForm() " id="formbtn ">
+        Registration of Results
+      </button>
+    <div id="performanceUpdate ">
+     
+      <!-- <input type="button " value="Add Student Results>" onclick="progressUpdate()" /><br /><br /> -->
+    <form action=" " method="post" id="form" class="modal" hidden>
+        <h3>
+            Exam Registration
+            <button type="button" class="closeForm" onclick="closeForm()">&times;</button>
+        </h3><br>
+        <h4>Term</h4>
+        <select id="term">
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+        <select name="class Name" id="className">
+          <option value="class">Class Pre-Unit</option>
+          <option value="class">Class GPP1</option>
+          <option value="class">Class GPP2</option>
+          <option value="class">Class G1</option>
+          <option value="class">Class G2</option>
+          <option value="class">Class G3</option>
+          <option value="class">Class G4</option>
+          <option value="class">Class G5</option>
+          <option value="class">Class G6</option>
+          <option value="class">Class G7</option>
+          <option value="class">Class G8</option>
+        </select>
+        <br />
+        <br />
+        <label for="stdName">Student Name :</label><br />
+        <input type="text" id="stdName" placeholder="Name" required />
+        <br />
+
+        <label for="sMath">Mathematics : </label><br>
+        <input type="number" id="math" required /><br>
+        <label for="sscie"> Science </label><br>
+        <input type="number" id="science" min="0" max="100" required /><br />
+        <label for="sRe">C. /I. /H.R.E.</label><br />
+        <input type="number" id="kisw" min="0" max="100" required /><br>
+        <label for="sKisw">Kiswahili</label><br>
+        <input type="number" id="sKisw" required /><br />
+        <label for="sEng">English</label><br>
+        <input type="number" id="eng" required /><br>
+        <label for="sComp">Computer</label><br>
+        <input type="number" id="comp" min="0" max="100" required /> <br>
+
+        <input type="submit" value="Submit" id="submit" onclick="resultsData()&&alert('Submitted!!')" />
+    </form>
+    </div>
+
+    <div id="firstSection">
+        <h2>The Past Classes Performance</h2>
+        <div id="infoProgress">
+            <canvas id="resultsYear"></canvas>
+            <span id="p">
+          <h1>The Students</h1>
+
+          The SChool has had a great and steady growth in the performance of the students' final year. 
+          The great performance as evidenced by the great transition to higher levels of education is 
+          an indication of the good teacher, parent and student relationship that has great impact on 
+          student performance.
+        </span>
+        </div>
+    </div>
+    <div class="progressStatus">
+        <h2>Class progress</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem ad tempore dolore blanditiis, perspiciatis, quibusdam debitis delectus vel praesentium officia maiores ratione distinctio reiciendis. Quia culpa iure voluptates eveniet.
+        <div id="pieChart"></div>
+    </div>
+    <div class="attendanceClass">
+        <h2>Attendace</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat libero, numquam nemo molestiae facere exercitationem molestias porro aperiam provident, nulla nobis adipisci voluptatem itaque. At accusamus voluptate nihil impedit animi. Lorem ipsum,
+            dolor sit amet consectetur adipisicing elit. Quaerat libero, numquam nemo molestiae facere exercitationem molestias porro aperiam provident, nulla nobis adipisci voluptatem itaque. At accusamus voluptate nihil impedit animi.
+        </p>
+        <div id="attendance"></div>
+    </div>
+
+    </div>
+    <footer></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="./assets/js/app.js"></script>
+    </body>
+
+</html>
