@@ -1,73 +1,89 @@
-*{
-     margin: 0; 
-    padding: 0; 
+* {
+    margin: 0;
+    padding: 0;
 }
+
 body {
     margin: 0;
 }
-.navbar  {
+
+.index {
+    /* background-color: white; */
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+.navbar {
     display: flex;
     flex-direction: row;
     width: 100%;
-    background: #ffe66f;
+    background: #fda3f1;
     padding: 0;
 }
+
 .logo {
-    color: black;
+    color: #FFFFFF;
     padding: 1%;
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.navs ul  li {
+
+.navs ul li {
     display: inline-block;
     text-align: center;
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
     margin-right: 5rem;
     margin-top: 20px;
     margin-bottom: 20px;
     /* margin: auto; */
 }
-.navs ul li a{
-    color: black;
-    font-weight: bold;
-    font-size: 2rem;
-}.navs ul li a {
-    text-decoration: none;
-    color: black;
-}.navs ul li a:hover{
-    cursor: pointer;
-    border-bottom: 3px solid #ED661F;
-    color: #ED661F;
-}
-.header {
 
-    background-image: url("https://www.studyinternational.com/wp-content/uploads/2019/11/Private-school-students-running-out-of-school.jpg");
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   height: 50vh;
-   width: 100%;
+.navs ul li a {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navs ul li a:hover {
+    cursor: pointer;
+    border-bottom: 3px solid #c201af;
+    color: black;
+    font-size: 120%;
+}
+
+.header {
+    background-image: url("../images/roadtoknowledge.png");
+    background-position: center;
+    background-size: contain;
+    align-items: right;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
 }
 
 .text {
     flex-direction: row;
     /* margin-top: 2rem; */
     /* margin-left: 4rem; */
-    padding: 3rem 0;
+    /* float: left; */
+    padding: 3rem;
     flex: 1;
+    margin-bottom: 10px;
 }
 
 .text h1 {
     font-size: 2rem;
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .text p {
     font-size: 2rem;
+    width: 50%;
     font-family: sans-serif;
     font-weight: lighter;
     /* float: right; */
-    color: #fff;
+    color: #000000;
 }
 
 .photo {
@@ -81,19 +97,22 @@ body {
     width: 100%;
     height: 100%;
 }
-.footer{
+
+.footer {
     background-color: #000;
     color: #fff;
 }
-.index{
-    display:flex;
+
+.index {
+    display: flex;
     align-items: center;
     text-align: center;
     justify-content: space-between;
     margin-left: 3px;
     margin-right: 3px;
 }
-.zoom{
+
+.zoom {
     height: 50px;
     /* border: 2px solid #000; */
     /* box-sizing: border-box; */
