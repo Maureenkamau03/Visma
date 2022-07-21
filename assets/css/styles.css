@@ -103,4 +103,19 @@ body {
     justify-content: space-between;
     margin-left: 3px;
     margin-right: 3px;
+    /* box-shadow: inset; */
 }
+.zoom p{
+    font-weight: bold;
+}
+.apply{
+    margin-top: 10px;
+}
+.esteem{
+    /* position: relative; */
+    border: #ED661F solid 2px;
+    margin: 30px;
+    /* float: right; */
+    padding: 20px;
+}
+.image
