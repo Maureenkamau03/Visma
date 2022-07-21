@@ -5,88 +5,93 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta viewport " content="width=device-width, initial-scale=1.0 " />
-    <link rel="shortcut icon " href="./assets/images/logoVS.png " type="image/png ">
-
-    <link rel="stylesheet " href="./assets/css/styles.css " />
+    <link
+      rel="shortcut icon "
+      href="./assets/images/logoVS.png "
+      type="image/png "
+    />
+    <link rel="stylesheet " href="./assets/css/data-styles.css " />
 
     <title>Visma School</title>
-</head>
+  </head>
 
-<body>
-  <div class="navbar ">
-    <div class="logo ">
-      <img src="./assets/images/logoVS.png " alt="Visma School VS logo ">
+  <body>
+    <div class="navbar ">
+      <div class="logo ">
+        <img src="./assets/images/logoVS.png " alt="Visma School VS logo " />
         <h1>Visma School</h1>
-    </div>
-    <div class="navs ">
+      </div>
+      <div class="nav ">
         <ul>
-            <li><a href="index.html " class="active ">Home</a></li>
-            <li><a href="data.html ">Data</a></li>
-            <li><a href="test.html ">Test</a></li>
-            <li><a href="contactus.html ">Contact Us</a></li>
-            <li><a href="signin.html ">Sign In</a></li>
-            <li><a href="signout.html ">Sign Out</a></li>
-           
-    </ul>
-  </div>
-</div>
+          <li><a href="index.html " class="active ">Home</a></li>
+          <li><a href="data.html ">Data</a></li>
+          <li><a href="test.html ">Test</a></li>
+          <li><a href="contactus.html ">Contact Us</a></li>
+          <li><a href="signin.html ">Sign In</a></li>
+          <li><a href="signout.html ">Sign Out</a></li>
+        </ul>
+      </div>
+    </div>
 
     <div class="dataPage ">
       <div class="performance ">
         <h2>School Performance</h2>
       </div>
-      <button class="openForm "  onclick="openForm() " id="formbtn ">
+      <button class="openForm " onclick="openForm() " id="formbtn ">
         Registration of Results
       </button>
-    <div id="performanceUpdate " >
-     
-      <!-- <input type="button " value="Add Student Results>" onclick="progressUpdate()" /><br /><br /> -->
-    <form action=" " method="post" id="form" class="modal" style="display:none;">
+      <div id="performanceUpdate ">
+        <!-- <input type="button " value="Add Student Results>" onclick="progressUpdate()" /><br /><br /> -->
+    <form action=" " method="post" id="form" class="modal" style="display: none">
         <h3>
             Exam Registration
-            <button type="button" class="closeForm" onclick="closeForm()">&times;</button>
-        </h3><br>
+            <button type="button" class="closeForm" onclick="closeForm()">
+              &times;
+            </button>
+        </h3>
+        <br />
         <h4>Term</h4>
         <select id="term">
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-        </select>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+          </select>
         <select name="class Name" id="className">
-          <option value="class">Class Pre-Unit</option>
-          <option value="class">Class GPP1</option>
-          <option value="class">Class GPP2</option>
-          <option value="class">Class G1</option>
-          <option value="class">Class G2</option>
-          <option value="class">Class G3</option>
-          <option value="class">Class G4</option>
-          <option value="class">Class G5</option>
-          <option value="class">Class G6</option>
-          <option value="class">Class G7</option>
-          <option value="class">Class G8</option>
-        </select>
+            <option value="class">Class Pre-Unit</option>
+            <option value="class">Class GPP1</option>
+            <option value="class">Class GPP2</option>
+            <option value="class">Class G1</option>
+            <option value="class">Class G2</option>
+            <option value="class">Class G3</option>
+            <option value="class">Class G4</option>
+            <option value="class">Class G5</option>
+            <option value="class">Class G6</option>
+            <option value="class">Class G7</option>
+            <option value="class">Class G8</option>
+          </select>
         <br />
         <br />
         <label for="stdName">Student Name :</label><br />
         <input type="text" id="stdName" placeholder="Name" required />
         <br />
 
-        <label for="sMath">Mathematics : </label><br>
-        <input type="number" id="math" required /><br>
-        <label for="sscie"> Science </label><br>
+        <label for="sMath">Mathematics : </label><br />
+        <input type="number" id="math" required /><br />
+        <label for="sscie"> Science </label><br />
         <input type="number" id="science" min="0" max="100" required /><br />
         <label for="sRe">C. /I. /H.R.E.</label><br />
-        <input type="number" id="kisw" min="0" max="100" required /><br>
-        <label for="sKisw">Kiswahili</label><br>
+        <input type="number" id="kisw" min="0" max="100" required /><br />
+        <label for="sKisw">Kiswahili</label><br />
         <input type="number" id="sKisw" required /><br />
-        <label for="sEng">English</label><br>
-        <input type="number" id="eng" required /><br>
-        <label for="sComp">Computer</label><br>
-        <input type="number" id="comp" min="0" max="100" required /> <br>
+        <label for="sEng">English</label><br />
+        <input type="number" id="eng" required /><br />
+        <label for="sComp">Computer</label><br />
+        <input type="number" id="comp" min="0" max="100" required /> <br />
 
         <input type="submit" value="Submit" id="submit" onclick="addClassResults()&&alert('Submitted!!')" />
-        <button type="button" class="closeForm" id="cancel" onclick="closeForm()">Cancel</button>
-
+        <button type="button" class="closeForm" id="cancel" onclick="closeForm()">
+            Cancel
+          </button>
     </form>
     </div>
 
@@ -95,35 +100,179 @@
         <div id="infoProgress">
             <canvas id="resultsYear"></canvas>
             <span id="p">
-          <h1>The Students</h1>
+            <h1>The Students</h1>
 
-          The SChool has had a great and steady growth in the performance of the students' final year. 
-          The great performance as evidenced by the great transition to higher levels of education is 
-          an indication of the good teacher, parent and student relationship that has great impact on 
-          student performance.
-        </span>
+            Visma School has had a great and steady growth in the performance of
+            the students' final year. The great performance as evidenced by the
+            great transition to higher levels of education is an indication of
+            the good teacher, parent and student relationship that has great
+            impact on student performance.
+          </span>
         </div>
     </div>
+
     <div class="progressStatus">
         <h2>Class progress</h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam autem ad tempore dolore blanditiis, perspiciatis, quibusdam debitis delectus vel praesentium officia maiores ratione distinctio reiciendis. Quia culpa iure voluptates eveniet.
-        <div id="pieChart"></div>
+        Students have performed well in the just concluded Term 2 Entry Exams. The model shows the performance in different subjects as part of a whole.
+        <div id="pieChart" style="width: 100%; max-width: 100%; height: 500px"></div>
     </div>
     <div class="attendanceClass">
         <h2>Attendace</h2>
         <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat libero, numquam nemo molestiae facere exercitationem molestias porro aperiam provident, nulla nobis adipisci voluptatem itaque. At accusamus voluptate nihil impedit animi. Lorem ipsum,
-            dolor sit amet consectetur adipisicing elit. Quaerat libero, numquam nemo molestiae facere exercitationem molestias porro aperiam provident, nulla nobis adipisci voluptatem itaque. At accusamus voluptate nihil impedit animi.
+            Recent happenings in our communities we have heard students get lost and parents make accusations to teachers of poor student care. We now know who is present in school and can confirm their presence for a particular period without struggle. We just need
+            to specify the period.
+
         </p>
         <div id="attendance"></div>
     </div>
-
     </div>
+
     <footer></footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="./assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js "></script>
+    <script type="text/javascript " src="https://www.gstatic.com/charts/loader.js "></script>
+    <script src="./assets/js/data-app.js"></script>
+    <script>
+        var xYear = [
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+        ];
+        var yMarks = [329, 234, 359, 401, 378, 356, 333, 0];
+        var barcolors = [
+            "red",
+            "lime",
+            "brown",
+            "orange",
+            "blue",
+            "black",
+            "green",
+        ];
+
+        new Chart("resultsYear", {
+            type: "bar",
+            data: {
+                labels: xYear,
+                datasets: [{
+                    backgroundColor: barcolors,
+                    data: yMarks,
+                }, ],
+            },
+            options: {
+                legend: {
+                    display: false,
+                },
+                title: {
+                    display: true,
+                    text: "KCPE Performance 2015 - 2021",
+                },
+            },
+        });
+        //here
+        google.charts.load("current", {
+            packages: ["corechart"],
+        });
+        google.charts.setOnLoadCallback(resultChart);
+
+        function resultChart() {
+            var results = google.visualization.arrayToDataTable([
+                ["Subject", "Marks"],
+                ["Maths", 80],
+                ["English", 70],
+                ["Kiswahili", 60],
+                ["Music", 12],
+                ["Science", 90],
+                ["Agriculture", 50],
+                ["Religious Education", 45],
+            ]);
+            var progressdata = {
+                title: "Results Term 1 2022",
+                width: 500,
+                height: 300,
+            };
+
+            var chart = new google.visualization.PieChart(
+                document.getElementById("attendance")
+            );
+            chart.draw(results, progressdata);
+        }
+        //check
+        var xYear = [
+            "2015",
+            "2016",
+            "2017",
+            "2018",
+            "2019",
+            "2020",
+            "2021",
+            "2022",
+        ];
+        var yMarks = [329, 234, 359, 401, 378, 356, 333, 0];
+        var barcolors = [
+            "red",
+            "lime",
+            "brown",
+            "orange",
+            "blue",
+            "black",
+            "green",
+        ];
+
+        new Chart("attendance", {
+            type: "bar",
+            data: {
+                labels: xYear,
+                datasets: [{
+                    backgroundColor: barcolors,
+                    data: yMarks,
+                }, ],
+            },
+            options: {
+                legend: {
+                    display: false,
+                },
+                title: {
+                    display: true,
+                    text: "KCPE Performance 2015 - 2021",
+                },
+            },
+        });
+
+        // pie 1
+        google.charts.load("current", {
+            packages: ["corechart"],
+        });
+        google.charts.setOnLoadCallback(attendanceChart);
+
+        function attendanceChart() {
+            var population = google.visualization.arrayToDataTable([
+                ["Grade", "Population"],
+                ["PP1", 20],
+                ["PP2", 34],
+                ["GR1", 33],
+                ["GR2", 22],
+                ["GR3", 43],
+                ["GR4", 30],
+                ["GR5", 25],
+                ["GR6", 45],
+                ["GR7", 35],
+                ["GR8", 15],
+            ]);
+            var classData = {
+                title: " School Attendance",
+            };
+
+            var chart = new google.visualization.PieChart(
+                document.getElementById("pieChart")
+            );
+            chart.draw(population, classData);
+        }
+    </script>
     </body>
 
 </html>

@@ -78,7 +78,7 @@ new Chart("resultsYear", {
         legend: { display: false },
         title: {
             display: true,
-            text: "KCPE Performance 2015 -2021",
+            text: "KCPE Performance 2015 - 2021",
         },
     },
 });
@@ -101,7 +101,7 @@ function resultChart() {
     var progressdata = { title: "Results Term 1 2022", width: 500, height: 300 };
 
     var chart = new google.visualization.PieChart(
-        document.getElementById("pieChart")
+        document.getElementById("attendance")
     );
     chart.draw(results, progressdata);
 }
@@ -118,16 +118,18 @@ function attendanceChart() {
         ["GR2", 22],
         ["GR3", 43],
         ["GR4", 30],
-        ["GR5", 25][("GR6", 45)][("GR7", 35)][("GR8", 15)],
+        ["GR5", 25],
+        ["GR6", 45],
+        ["GR7", 35],
+        ["GR8", 15]
     ]);
     var classData = {
-        title: "Wednesday School Attendance",
-        width: 100,
-        height: 200,
+        title: "Wednesday School Attendance"
+
     };
 
     var chart = new google.visualization.PieChart(
-        document.getElementById("attendance")
+        document.getElementById("pieChart")
     );
     chart.draw(population, classData);
 }
