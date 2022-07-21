@@ -1,3 +1,24 @@
+// contactus page js starts here
+
+document.getElementById("email-send").addEventListener("click", emailSubmit);
+
+function emailSubmit() {
+    let email = document.getElementById("contactus-email").value;
+    let firstName = document.getElementById("firstname-email").value;
+    let lastName = document.getElementById("lastname-email").value;
+    // console.log(firstName);
+    // console.log(lastName);
+    // console.log(email);
+    const user = {
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+    };
+}
+// contact us page js ends here
+// signup js starts here
+
+// signup js ends here
 // Data Page Below
 // Hide New Results Input Panel 1.
 
@@ -89,23 +110,26 @@ google.charts.load("current", { packages: ["corechart"] });
 google.charts.setOnLoadCallback(attendanceChart);
 
 function attendanceChart() {
-    var results = google.visualization.arrayToDataTable([
-        ["Class", "Number"],
-        ["Grade 1", 50],
-        ["Grade 2", 40],
-        ["Grade 3", 50],
-        ["Grade 4", 42],
-        ["Grade 5", 40],
-        ["Grade 6", 50],
-        ["Grade 7", 45],
-        ["Grade 8", 45],
+    var population = google.visualization.arrayToDataTable([
+        ["Grade", "Population"],
+        ["PP1", 20],
+        ["PP2", 34],
+        ["GR1", 33],
+        ["GR2", 22],
+        ["GR3", 43],
+        ["GR4", 30],
+        ["GR5", 25][("GR6", 45)][("GR7", 35)][("GR8", 15)],
     ]);
-    var progressdata = { title: "Results Term 1 2022", width: 500, height: 300 };
+    var classData = {
+        title: "Wednesday School Attendance",
+        width: 100,
+        height: 200,
+    };
 
     var chart = new google.visualization.PieChart(
         document.getElementById("attendance")
     );
-    chart.draw(results, progressdata);
+    chart.draw(population, classData);
 }
 
 // Data Page above
