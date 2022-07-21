@@ -11,6 +11,7 @@ body {
     /* background-color: white; */
     box-sizing: border-box;
     padding: 0px;
+    height: 300px;
 }
 
 .navbar {
@@ -58,8 +59,9 @@ body {
     background-size: contain;
     align-items: right;
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 400px;
     width: 100%;
+    margin: 30px;
 }
 
 .text {
@@ -75,6 +77,7 @@ body {
 .text h1 {
     font-size: 2rem;
     font-family: 'Times New Roman', Times, serif;
+    margin: 30px;
 }
 
 .text p {
@@ -82,6 +85,7 @@ body {
     width: 50%;
     font-family: sans-serif;
     font-weight: lighter;
+    margin: 30px;
     /* float: right; */
     color: #000000;
 }
@@ -122,4 +126,22 @@ body {
     justify-content: space-between;
     margin-left: 3px;
     margin-right: 3px;
+    /* box-shadow: inset; */
+}
+
+.zoom p {
+    font-weight: bold;
+}
+
+.apply {
+    margin-top: 10px;
+}
+
+.esteem {
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    height: 300px;
+    padding: 20px;
+    width: 100%;
 }
