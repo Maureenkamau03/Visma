@@ -13,55 +13,35 @@
 </head>
 
 <body>
-    <div class="navbar ">
-        <div class="logo ">
-            <h1>Visma School</h1>
-        </div>
-        <div class="navs ">
-            <ul>
-                <li><a href="index.html " class="active ">Home</a></li>
-                <li><a href="data.html ">Data</a></li>
-                <li><a href="test.html ">Test</a></li>
-                <li><a href="contactus.html ">Contact Us</a></li>
-                <li><a href="signin.html ">Sign In</a></li>
-                <li><a href="signout ">Sign Out</a></li>
-            </ul>
-        </div>
+  <div class="navbar ">
+    <div class="logo ">
+      <img src="./assets/images/logoVS.png " alt="Visma School VS logo ">
+        <h1>Visma School</h1>
     </div>
+    <div class="navs ">
+        <ul>
+            <li><a href="index.html " class="active ">Home</a></li>
+            <li><a href="data.html ">Data</a></li>
+            <li><a href="test.html ">Test</a></li>
+            <li><a href="contactus.html ">Contact Us</a></li>
+            <li><a href="signin.html ">Sign In</a></li>
+            <li><a href="signout.html ">Sign Out</a></li>
+           
+    </ul>
+  </div>
+</div>
 
-    <div class="dataPage ">
-        <div class="performance ">
-            <h1>School Performance</h1>
-    <div class="navbar ">
-        <div class="logo ">
-          <img src="./assets/images/logoVS.png " alt="Visma School VS logo ">
-            <h1>Visma School</h1>
-        </div>
-        <div class="navs ">
-            <ul>
-                <li><a href="index.html " class="active ">Home</a></li>
-                <li><a href="data.html ">Data</a></li>
-                <li><a href="test.html ">Test</a></li>
-                <li><a href="contactus.html ">Contact Us</a></li>
-                <li><a href="signin.html ">Sign In</a></li>
-                <li><a href="signout.html ">Sign Out</a></li>
-                <a href="javascript:void(0); " class="icon " onclick="myfunction() ">
-                    <i class="fa fa-bars "></i
-          ></a>
-        </ul>
-      </div>
-    </div>
     <div class="dataPage ">
       <div class="performance ">
         <h1>School Performance</h1>
       </div>
-      <button class="openForm " onclick="openForm() " id="formbtn ">
+      <button class="openForm "  onclick="openForm() " id="formbtn ">
         Registration of Results
       </button>
-    <div id="performanceUpdate ">
+    <div id="performanceUpdate " >
      
       <!-- <input type="button " value="Add Student Results>" onclick="progressUpdate()" /><br /><br /> -->
-    <form action=" " method="post" id="form" class="modal" hidden>
+    <form action=" " method="post" id="form" class="modal" style="display:none;">
         <h3>
             Exam Registration
             <button type="button" class="closeForm" onclick="closeForm()">&times;</button>
@@ -104,7 +84,9 @@
         <label for="sComp">Computer</label><br>
         <input type="number" id="comp" min="0" max="100" required /> <br>
 
-        <input type="submit" value="Submit" id="submit" onclick="resultsData()&&alert('Submitted!!')" />
+        <input type="submit" value="Submit" id="submit" onclick="addClassResults()&&alert('Submitted!!')" />
+        <button type="button" class="closeForm" id="cancel" onclick="closeForm()">Cancel</button>
+
     </form>
     </div>
 
