@@ -79,14 +79,17 @@ li button {
     height: 80px;
 }
 
-.testbar {
+
+/* .testbar {
     color: #ffff;
-}
+} */
 
 
 /*---Test Section---*/
 
 .tab {
+    display: flex;
+    justify-content: space-between;
     color: blue;
     text-align: start;
     padding: 20px;
@@ -95,7 +98,11 @@ li button {
     font-size: 24px;
     font-weight: 700;
     border-style: double;
-    background-color: #ff99f3;
+    /* background-color: #ff99f3; */
+}
+
+.section-tabs {
+    color: #0000;
 }
 
 .tab p {
