@@ -1,16 +1,21 @@
 /*----Test start----*/
+
+
 /*----NavigationBar----*/
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    background:whitesmoke;
+
+body {
+    background: whitesmoke;
     background-position: center;
     background-size: cover;
     height: 100vh;
 }
-nav{
+
+nav {
     background-color: #c201af;
     height: 80px;
     width: 100%;
@@ -18,55 +23,66 @@ nav{
     font-family: sans-serif;
     text-align: start;
 }
-.label-logo{
+
+.label-logo {
     color: black;
     font-size: 30px;
     line-height: 100px;
     font-weight: bold;
 }
-.label-logo strong{
+
+.label-logo strong {
     color: green;
 }
-nav ul{
+
+nav ul {
     float: right;
     margin-right: 100px;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     line-height: 100px;
     margin: 0 20px;
-    
 }
-nav ul li a{
+
+nav ul li a {
     color: black;
-    font-size: 15px; 
+    font-size: 15px;
     font-weight: 500;
 }
-li button{
+
+li button {
     font-size: 20px;
-    background-color:grey;
+    background-color: grey;
     color: white;
     font-weight: 700;
     border-radius: 10px;
     padding: 10px 20px;
 }
+
+
 /*.nav ul li a:hover{
     transition: .5s;
     color: blue;
     box-shadow: grey;
 }*/
-.nav-link span:hover{
+
+.nav-link span:hover {
     transition: .5s;
     color: yellow;
     box-shadow: grey;
-
 }
-.img{
+
+.img {
     width: 150px;
     height: 80px;
 }
+
+
 /*---Test Section---*/
-.tab{
+
+.tab {
     color: blue;
     text-align: start;
     padding: 20px;
@@ -77,11 +93,14 @@ li button{
     border-style: double;
     background-color: aliceblue;
 }
-.tab p{
+
+.tab p {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.tab-link{
+
+.tab-link {
+    display: inline-block;
     color: rgb(8, 8, 221);
     text-align: start;
     padding: 10px;
@@ -89,18 +108,30 @@ li button{
     font-family: sans-serif;
     font-size: 20px;
 }
-.tab-link li{
+
+.tab-link li {
+    display: flex;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 30px;
+    list-style: none;
 }
-.tab-link ul li a:hover{
+
+.tab-link ul li a {
     color: black;
     background-color: aliceblue;
+    text-decoration: none;
 }
-.btn{
+
+.tab-link ul li a:hover {
+    color: black;
+    background-color: aliceblue;
+    text-decoration: none;
+}
+
+.btn {
     font-size: 20px;
-    background-color:grey;
+    background-color: grey;
     border-radius: 3px;
     padding: 10px 20px;
     float: right;
@@ -110,36 +141,48 @@ li button{
     border: 1px solid;
     border-color: #c7cdd1;
     margin-bottom: 20px;
-    margin-top:10px;
+    margin-top: 10px;
 }
-.muted{
+
+#demo {
+    color: #c201af;
+}
+
+#muted {
     clear: none;
     font-family: sans-serif;
     font-size: 1em;
 }
-.nav-wrapper{
-background: black;
+
+.nav-wrapper {
+    background: black;
 }
-.container{
+
+.container {
     text-align: center;
     font-size: 2em;
     font-family: sans-serif;
     font-weight: bold;
 }
-.container a{
+
+.container a {
     color: white;
 }
-.center-align{
+
+.center-align {
     text-align: center;
     font-family: sans-serif;
     font-size: 24px;
 }
-.center .btn{
+
+.center .btn {
     color: blue;
 }
-.white-text-green{
+
+.white-text-green {
     background-color: green;
 }
-.black-text-green{
+
+.black-text-green {
     padding: 8px;
 }
