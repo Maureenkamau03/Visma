@@ -71,7 +71,7 @@ li button {
 .nav-link span:hover {
     transition: .5s;
     color: yellow;
-    box-shadow: grey;
+    box-shadow: #fff;
 }
 
 .img {
@@ -195,7 +195,7 @@ li button {
 }
 
 .white-text-green {
-    background-color: green;
+    background-color: #ff99f3;
 }
 
 .black-text-green {
