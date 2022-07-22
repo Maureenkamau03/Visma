@@ -1,65 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/test-styles.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
+
 <body>
     <!--NavigationBar-->
     <div class="test">
         <nav>
-            <img class="img" src="https://media1.thehungryjpeg.com/thumbs2/ori_3809147_l9m13pjgou6bjkhsdbuiu9hf0zqh8pihnyfzmq58_monogram-vs-logo-design.jpg" alt="Visma School">
+            <img class="img" src="./assets/images/logoVS.png" alt="Visma School">
             <label class="label-logo">Visma School > <strong>Tests</strong></label>
             <ul class="test-bar">
+                <li><a href="index.html " class="active ">Home</a></li>
+                <li><a href="data.html ">Data</a></li>
+                <li><a href="contactus.html ">Contact Us</a></li>
+
                 <li><a class="nav-link" href="#"><button>SHOW BY DATE</button></a></li>
                 <li><a class="nav-link" href="#"><span>SHOW BY TYPE</span></a></li>
             </ul>
         </nav>
+
     </div>
     <!--Test Section-->
-    <div id="wrapper" class="ic-Layout-wrapper">
-        <div class="ic-app-nav-toggle-and-crumbs no-print">
-            <button type="button" id="courseMenuToggle" class="Button Button--link ic-app-course-nav-toggle" aria-live="polite" aria-label="Hide courses navigation menu">
-              <i class="icon-hamburger" aria-hidden="true"></i>
-            </button>
-  
-          <div class="ic-app-crumbs">
-              <div class="testcrumbs" role="navigation" aria-label="testcrumbs">
-                <ul>
-                    <li class="home"><a href="/"><span class="ellipsible"><i class="icon-home" title="My dashboard"><span class="screenreader-only">My dashboard</span></i></span></a></li>
-                    <li><a href="#"><span class="ellipsible">VISMA</span></a></li>
-                    <li><a href="#"><span class="ellipsible">Tests</span></a></li>
-                </ul>
-            </div>
-          </div>
-  
-  
-          <div class="right-of-crumbs">
-              <div class="TutorialToggleHolder"></div>
-          </div>
-  
+    <div class="tab">
+        <p><a href="#"><i class="icon-name" title="Visma">Visma</i></a></p>
+        <p><a href="#"><i class="icon-name" title="My Dashboard">My Dashboard</i></a></p>
+        <p><a href="#"><i class="icon-name" title="Tests">Tests</i></a></p>
+    </div>
+
+    <button class="btn">Expand all</button>
+    <form action="/courses/659/start_offline_web_export" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="fHPlzqcwICg9IoD9q6TXU4pRgCgtI1GdeU7Wru6bplUVK4aq4klMSk1k7pbH6pIpzGDkaxttCd4yeKzh2qvMYQ==">
+        <button type="submit" class="btn offline_web_export" style="display: none;">
+      <i class="icon-export" role="presentation"></i>
+      Export Course Content
+    </button>
+    </form>
+    <div class="inline-block module_index_tools">
+        <a class="al-trigger btn" role="button" aria-haspopup="true" aria-owns="toolbar-1" href="#" tabindex="0">
+            <i class="icon-more" aria-hidden="true" title="Commons Favourites"></i>
+            <span class="screenreader-only">Modules Settings</span>
+        </a>
+
+        <ul id="toolbar-1" class="al-options ui-menu ui-widget ui-widget-content ui-corner-all ui-popup ui-kyle-menu use-css-transitions-for-show-hide" role="menu" aria-hidden="true" aria-expanded="false" tabindex="0" style="display: none; top: 64px; left: 600px;"
+            aria-activedescendant="ui-id-1"><span class="ui-menu-carat" style="left: 137px;"><span></span></span>
+            <li role="presentation" class="module_index_menu ui-menu-item">
+                <a href="https://moringaschool.instructure.com/courses/659/external_tools/1?launch_type=module_index_menu" data-tool-id="1" data-tool-launch-type="module_index_menu" class="menu_tray_tool_link ui-corner-all" id="ui-id-1" tabindex="-1" role="menuitem">
+                    <i class="icon-commons"></i> Commons Favourites</a>
+            </li>
+
+        </ul>
+    </div>
+    <small id="muted">
+    Last viewed:
+    <p id="demo"></p>
+    <a href="#visma">
+      <script>
+        const d =new Date();
+        document.getElementsById('demo').innerHTML;
+      </script>
+    </a>
+  </small>
+    <button onclick="openTab()">Acess Resources</button>
+    <div class="tab-link" id="tab-link" role="navigation" aria-label="Courses navigation menu" style="display:none;">
+        <button onclick="closeTab()">&times;</button>
+
+        <ul class="section-tabs">
+            <li><a class="section" href="#">Home</a></li>
+            <li><a class="section" href="#">Announcements</a></li>
+            <li><a class="section" href="#">Tests</a></li>
+            <li><a class="section" href="#">Discussions</a></li>
+            <li><a class="section" href="#">Grades</a></li>
+            <li><a class="section" href="#">Pages</a></li>
+            <li><a class="section" href="#">Files</a></li>
+            <li><a class="section" href="#">Syllabus</a></li>
+            <li><a class="section" href="#">Quizzes</a></li>
+            <li><a class="section" href="#">Modules</a></li>
+        </ul>
+    </div>
+    </div>
+    <div id="quiz">
+        <form action="" name="quiz" id="mcquiz">
+
+        </form>
+    </div>
+
+
+    <nav class="nav-wrapper">
+        <div class="container">
+            <a href="test.html" class="brand-logo">TEST</a>
         </div>
-      <div id="main" class="ic-Layout-columns">
-          <div class="ic-Layout"></div>
-          <div id="left-side" class="ic-app-course-menu ic-sticky-on list-view" style="display: block">
-            <div id="sticky-container" class="ic-sticky-frame">
-              <div class="tabs" role="navigation" aria-label="Courses navigation menu">
-                <ul id="section-tabs">
-                    <li class="section"><a href="#/home" class="home" tabindex="0">Home</a></li>
-                    <li class="section"><a href="#/announcements" class="announcements" tabindex="0">Announcements</a></li>
-                    <li class="section"><a href="#/tests" aria-current="page" class="tests active" tabindex="0">Tests</a></li>
-                    <li class="section"><a href="#/discussion_topics" class="discussions" tabindex="0">Discussions</a></li>
-                    <li class="section"><a href="#/grades" class="grades" tabindex="0">Grades</a></li>
-                <li class="section"><a href="#/wiki" class="pages" tabindex="0">Pages</a></li>
-                <li class="section"><a href="#/files" class="files" tabindex="0">Files</a></li>
-                <li class="section"><a href="#/assignments/syllabus" class="syllabus" tabindex="0">Syllabus</a></li>
-                <li class="section"><a href="#/quizzes" class="quizzes" tabindex="0">Quizzes</a></li>
-                <li class="section"><a href="#/modules" class="modules" tabindex="0">Modules</a></li>
-               </ul>
+    </nav>
+
+    <section class="container-section">
+        <div class="row">
+            <div class="col s12 16 offset-13">
+
+                <form class="myform" name="id" onsubmit="submitted(event)">
+                    <h4 class="center-align">STUDENT NAME</h4>
+
+                    <div class="progress">
+                        <div class="indeterminate"></div>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="material-icons white-text prefix">Account box</i>
+                        <input type="text" class="white-text" id="name">
+                        <label for="name">Name</label>
+                        <p class="center"><button type="submit" class="btn" onclick="this.style.display='none'">Submit Name</button></p>
+                    </div>
+
+                    <div>
+                        <p class="white-text-green">TEST RULES :</p>
+                        <p class="black-text-green">1. You<strong>cannot</strong>skip any question.</p>
+                        <p class="black-text-green">2.You<strong>cannot</strong>got to the previous question.</p>
+                        <p class="black-text-green">3.Try attempting<strong>all</strong>questions.</p>
+                    </div>
+
+                    <div class="progress">
+                        <div class="indeterminate"></div>
+                    </div>
+
+                </form>
+
             </div>
-            </div>
-          </div>
-        
+        </div>
+    </section>
+
+
+    <!--Compiled and minified javascript-->
+    <script src="./assets/js/test-app.js"></script>
+
+    <script>
+        function submitted(e) {
+            e.preventDefault();
+
+            let namee = documents.forms["id"]["name"].value;
+            sessionStorage.setItem("name", namee);
+        }
+    </script>
+</body>
+
+</html>
