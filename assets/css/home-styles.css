@@ -33,6 +33,11 @@ body {
     margin-bottom: 5px;
 }
 
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
 .navs ul li {
     display: inline-block;
     align-items: center;
