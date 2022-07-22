@@ -16,7 +16,7 @@ body {
 }
 
 nav {
-    background-color: #c201af;
+    background-color: #fda3f1;
     height: 80px;
     width: 100%;
     line-height: 80px;
@@ -32,7 +32,7 @@ nav {
 }
 
 .label-logo strong {
-    color: green;
+    color: #fda3f1;
 }
 
 nav ul {
@@ -69,9 +69,9 @@ li button {
 }*/
 
 .nav-link span:hover {
-    transition: .5s;
+    transition: 0.5s;
     color: yellow;
-    box-shadow: #fff;
+    box-shadow: grey;
 }
 
 .img {
@@ -160,7 +160,7 @@ li button {
 }
 
 #demo {
-    color: #c201af;
+    color: #fda3f1;
 }
 
 #muted {
@@ -195,7 +195,7 @@ li button {
 }
 
 .white-text-green {
-    background-color: #ff99f3;
+    background-color: #fda3f1;
 }
 
 .black-text-green {
