@@ -18,78 +18,10 @@ div {
     box-shadow: #fc99f2 0 0 5px;
 } */
 
-
-/* .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    flex-direction: row;
-    width: 100%;
-    background: #fc99f2;
-    padding: 0;
-} */
-
 #p {
     width: 50%;
     padding: 20px;
 }
-
-
-/* 
-.nav {
-    display: block;
-    height: 80px;
-    width: 100%;
-    margin-left: 7rem;
-    margin-right: 5rem;
-    font-family: sans-serif;
-    margin: auto;
-}
-
-.nav-link span:hover {
-    transition: 0.5s;
-    color: yellow;
-    box-shadow: grey;
-}
-
-.nav ul li {
-    display: inline-block;
-    text-align: center;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    justify-content: space-between;
-}
-
-.nav ul li a {
-    color: #ffffff;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.nav ul li a:hover {
-    cursor: pointer;
-    border-bottom: 3px solid #ed661f;
-    font-size: 110%;
-    color: #C201AF;
-}
-
-.logo img {
-    width: 40px;
-    height: 40px;
-    padding: 30px;
-}
-
-.logo {
-    display: flex;
-    color: #ffffff;
-    padding: 1%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
- */
 
 
 /* css for signup page ends here */
@@ -104,62 +36,6 @@ body {
     /* padding: 0; */
     /* font-family: 'Inter',sans-serif; */
 }
-
-
-/* .navbar {
-    display: flex;
-    height: 100px;
-    width: 100%;
-    background: #fc99f2;
-    padding: 0;
-}
-
-.logo img {
-    width: 40px;
-    height: 40px;
-}
-
-.logo {
-    display: flex;
-    color: black;
-    padding: 1%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.navs ul li {
-    /* display: inline-block; */
-
-
-/* 
-justify-content: space-between;
-text-align: center; */
-
-
-/* margin-left: 7rem; */
-
-
-/* margin-right: 5rem; */
-
-
-/* align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.navs ul li a {
-    text-decoration: none;
-    font-size: 4em;
-    justify-content: space-between;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.navs ul li a:hover {
-    cursor: pointer;
-    border-bottom: 3px solid #C201AF;
-    color: #C201AF;
-}  */
 
 
 /* Begining of Styles for Data.html */
@@ -427,11 +303,6 @@ footer {
         width: 100%;
         height: 400px;
     }
-    /* .navs {
-        height: 200px;
-        margin: auto;
-        width: 100%;
-    } */
     .attendanceClass {
         display: block;
         box-sizing: border-box;
