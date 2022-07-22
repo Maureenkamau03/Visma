@@ -18,7 +18,8 @@ div {
     box-shadow: #fc99f2 0 0 5px;
 } */
 
-.navbar {
+
+/* .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,13 +28,15 @@ div {
     width: 100%;
     background: #fc99f2;
     padding: 0;
-}
+} */
 
 #p {
     width: 50%;
     padding: 20px;
 }
 
+
+/* 
 .nav {
     display: block;
     height: 80px;
@@ -86,6 +89,8 @@ div {
     margin-bottom: 5px;
 }
 
+ */
+
 
 /* css for signup page ends here */
 
@@ -100,7 +105,8 @@ body {
     /* font-family: 'Inter',sans-serif; */
 }
 
-.navbar {
+
+/* .navbar {
     display: flex;
     height: 100px;
     width: 100%;
@@ -122,12 +128,21 @@ body {
 }
 
 .navs ul li {
-    display: inline-block;
-    justify-content: space-between;
-    text-align: center;
-    margin-left: 7rem;
-    margin-right: 5rem;
-    align-items: center;
+    /* display: inline-block; */
+
+
+/* 
+justify-content: space-between;
+text-align: center; */
+
+
+/* margin-left: 7rem; */
+
+
+/* margin-right: 5rem; */
+
+
+/* align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -144,7 +159,7 @@ body {
     cursor: pointer;
     border-bottom: 3px solid #C201AF;
     color: #C201AF;
-}
+}  */
 
 
 /* Begining of Styles for Data.html */
@@ -412,11 +427,11 @@ footer {
         width: 100%;
         height: 400px;
     }
-    .navs {
+    /* .navs {
         height: 200px;
         margin: auto;
         width: 100%;
-    }
+    } */
     .attendanceClass {
         display: block;
         box-sizing: border-box;
