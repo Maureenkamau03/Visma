@@ -37,6 +37,7 @@ const signup = (e) => {
 	signUpDetails.push(signupInfor);
 
 	console.log(signupInfor);
+	window.open("signin.html");
 };
 // event listener for signup
 signUpButton.addEventListener("click", signup);
